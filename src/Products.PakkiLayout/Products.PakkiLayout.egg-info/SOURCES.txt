@@ -31,8 +31,11 @@ Products/PakkiLayout/browser/images/README.txt
 Products/PakkiLayout/browser/stylesheets/README.txt
 Products/PakkiLayout/browser/stylesheets/main.css
 Products/PakkiLayout/browser/templates/pakki_document_actions.pt
+Products/PakkiLayout/i18n/Ploneboard-fi.mo
 Products/PakkiLayout/i18n/Ploneboard-fi.po
+Products/PakkiLayout/i18n/events-fi.mo
 Products/PakkiLayout/i18n/events-fi.po
+Products/PakkiLayout/i18n/pakki-fi.mo
 Products/PakkiLayout/i18n/pakki-fi.po
 Products/PakkiLayout/portlet/__init__.py
 Products/PakkiLayout/portlet/collection.py
