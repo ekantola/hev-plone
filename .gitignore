@@ -1,3 +1,4 @@
+*.pyc
 /.installed.cfg
 /admin.cfg
 /bin
