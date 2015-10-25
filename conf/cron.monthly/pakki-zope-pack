@@ -1,0 +1,25 @@
+#! /bin/sh
+#
+# You can debug this script and the wget request by using the command
+# line switch "-v".
+
+set -e
+
+. /etc/default/pakki-zope-pack
+
+# Defaults
+[ -z "$KEEP_DAYS" ] && KEEP_DAYS=40
+[ -z "$HOST" ] && HOST=localhost
+[ -z "$PORT" ] && PORT=8080
+
+WGET_OPTS="--save-cookies=/dev/null --post-data=days:float=$KEEP_DAYS"
+
+if [ "$1" = "-v" ]; then
+  WGET_OPTS="$WGET_OPTS -v -O -"
+else
+  WGET_OPTS="$WGET_OPTS -q -O /dev/null"
+fi
+
+# Note: if you need to protect the credentials from being seen by shell users
+# with ps, use .wgetrc instead of the cmdline params.
+wget $WGET_OPTS --user="$USERNAME" --password="$PASSWORD" "http://$HOST:$PORT/Control_Panel/Database/main/manage_pack"

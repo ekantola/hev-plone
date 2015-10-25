@@ -1,0 +1,32 @@
+<dl class="portlet portletCollection myGroups"
+    i18n:domain="plone"
+    tal:define="groups view/mygroups;
+                portal_url here/portal_url;">
+
+
+    <dt class="portletHeader">
+        <span tal:content="view/data/header" />
+    </dt>
+
+    <dd class="portletItem" tal:condition="groups">
+      <ul>
+      <tal:groups tal:repeat="group groups">
+        <li tal:condition="python:group.getId()!='AuthenticatedUsers'"
+            tal:define="edit_url python:'/prefs_group_details?groupname='+group.getId();
+                        homepage python:group.getProperty('homepage', '');">
+        <a href="#" tal:condition="python:homepage==''"
+                    tal:attributes="href edit_url" 
+                    tal:content="python:str(group)">
+           group
+        </a>
+        <a href="#" tal:condition="python:homepage!=''"
+                    tal:attributes="href homepage" 
+                    tal:content="python:str(group)">
+           group
+        </a>
+        </li>
+      </tal:groups>
+      </ul>
+    </dd>
+
+</dl>

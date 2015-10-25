@@ -1,0 +1,39 @@
+# translation of plone-fi.po to Finnish
+# Eemeli Kantola <eemeli.kantola@iki.fi>, 2008, 2009.
+# Translation of plone.pot to Finnish
+msgid ""
+msgstr ""
+"Project-Id-Version: plone-fi\n"
+"POT-Creation-Date: 2008-12-29 01:30+0200\n"
+"PO-Revision-Date: 2008-12-29 01:30+0200\n"
+"Last-Translator: Eemeli Kantola <eemeli.kantola@iki.fi>\n"
+"Language-Team: Pakki2-developers <pakki2@lista.papa.partio.fi>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language-Code: fi\n"
+"Language-Name: Suomeksi\n"
+"Preferred-Encodings: latin9 utf-8\n"
+"Domain: plone\n"
+
+msgid "Viewable to the group only"
+msgstr "Näkyy vain ryhmälle"
+
+msgid "Internally published"
+msgstr "Julkaistu sisäisesti"
+
+msgid "Externally published"
+msgstr "Julkaistu ulkoisesti"
+
+msgid "Inherit permissions"
+msgstr "Peri oikeudet"
+
+msgid "Publish internally"
+msgstr "Julkaise sisäisesti"
+
+msgid "Retract to internally published"
+msgstr "Vedä sisäisesti julkaistuksi"
+
+msgid "Retract to internal"
+msgstr "Vedä ryhmän sisäiseksi"

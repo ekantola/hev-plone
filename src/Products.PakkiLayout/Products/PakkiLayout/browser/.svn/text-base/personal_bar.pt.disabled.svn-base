@@ -1,0 +1,30 @@
+<tal:comment tal:replace="nothing">
+*********************
+THIS ONE IS OBSOLETE, use the MyLogin portlet instead.
+*********************
+</tal:comment>
+
+<div id="portal-personaltools-wrapper"
+     i18n:domain="plone">
+
+<h5 class="hiddenStructure" i18n:translate="heading_personal_tools">Personal tools</h5>
+
+<ul id="portal-personaltools"
+    tal:condition="python:view.user_actions or not view.anonymous"
+    class="visualInline">
+
+    <li><a href="" tal:attributes="href string:${view/site_url}/login_form">Login</a></li>
+    <li><a href="" tal:attributes="href string:${view/site_url}/logout">Logout</a></li>
+
+    <tal:block condition="not: view/anonymous">
+        <br/>
+        <li>
+        <a id="user-name" tal:attributes="href view/homelink_url">
+            <img src="" tal:replace="structure here/user.gif" />
+            <span class="visualCaseSensitive" tal:content="view/user_name">John</span>
+        </a>
+        </li>
+    </tal:block>
+
+</ul>
+</div>

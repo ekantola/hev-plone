@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/pakki/!svn/ver/654/buildout/trunk/src/Products.PakkiLayout
+END
+setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/pakki/!svn/ver/445/buildout/trunk/src/Products.PakkiLayout/setup.py
+END
+zopeskel.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/pakki/!svn/ver/445/buildout/trunk/src/Products.PakkiLayout/zopeskel.txt
+END
+MANIFEST.in
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/pakki/!svn/ver/445/buildout/trunk/src/Products.PakkiLayout/MANIFEST.in
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/pakki/!svn/ver/445/buildout/trunk/src/Products.PakkiLayout/README.txt
+END
+setup.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/pakki/!svn/ver/445/buildout/trunk/src/Products.PakkiLayout/setup.cfg
+END

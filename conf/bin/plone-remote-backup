@@ -1,0 +1,28 @@
+#! /bin/sh
+
+set -e
+
+test -f /etc/default/plone-remote-backup && . /etc/default/plone-remote-backup
+if [ ! -d "$PLONE_ROOT" ]; then
+  echo "Error: variable PLONE_ROOT is not set" >&2
+  exit 1
+fi
+
+while getopts v opt; do
+  case $opt in
+    v)
+      VERBOSE=1
+      ;;
+    \?)
+      echo "Usage: $0 [-v]" >&2
+      ;;
+  esac
+done
+
+test -n "$VERBOSE" && set -x
+
+sshfs pakki-dev.papa.partio.fi:/mnt/backups/prod /mnt/backups/prod
+/srv/plone/zeocluster/bin/repozo --backup --gzip --quick --file=/srv/plone/zeocluster/var/filestorage/Data.fs --repository=/mnt/backups/prod/zodb
+fusermount -u /mnt/backups/prod
+
+rsync -a /srv/plone/zeocluster/var/blobstorage pakki-dev.papa.partio.fi:/mnt/backups/prod/

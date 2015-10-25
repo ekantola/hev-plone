@@ -1,0 +1,137 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+<metal:block fill-slot="top_slot"
+             tal:define="dummy python:request.set('disable_border',1)" />
+
+<div class="template-member_search_results" metal:fill-slot="main"
+       tal:define="pakki here/@@pakki;
+                   results python:pakki.searchUsersByRequestWithGroupSupport(request, sort_by='fullname');
+                   Batch python:modules['Products.CMFPlone'].Batch;
+                   DateTime python:modules['DateTime'].DateTime;
+                   b_size python:12;b_start python:0;b_start request/b_start | b_start;">
+
+    <h1 class="documentFirstHeading"
+        i18n:translate="heading_search_results">Search results</h1>
+
+    <div tal:condition="results"
+          tal:define="batch python:Batch(results, b_size, int(b_start), orphan=1)">
+
+        <strong i18n:translate="batch_x_items_matching_your_criteria">
+            <span i18n:name="number" tal:omit-tag="" tal:content="python:len(results)">234</span> items matching your criteria.
+        </strong>
+
+        <br/><br/><a class="visualNoPrint" href=".">Tee uusi haku</a><br/><br/>
+
+        <!-- Navigation -->
+        <div metal:use-macro="here/batch_macros/macros/navigation" />
+
+        <table class="listing nosort" style="width: 100%;">
+        <thead>
+            <tr>
+                <th i18n:translate="label_portrait">Portrait</th>
+                <th>
+                    <span i18n:translate="label_name">Name</span>,
+                    <span i18n:translate="label_local_group_abbr">Local group</span>,
+                    <span i18n:translate="label_contact_info">Contact info</span>
+                </th>
+                <th>
+                  <span i18n:translate="label_roles">Roles</span>,
+          <span i18n:translate="label_groups">Groups</span>
+        </th>
+                <th class="visualNoPrint">Pakki-k&auml;ytt&auml;j&auml;tiedot</th>
+                <th tal:condition="python:False" i18n:translate="label_homepage">Home page</th>
+                <th tal:condition="python:False" i18n:translate="">User details</th>
+          </tr>
+        </thead>
+        <tbody>
+        <metal:block tal:repeat="result batch">
+            <tr tal:define="userid result/userid | nothing;
+                            fullname result/description | nothing;
+                            email result/email | nothing;
+                            home python:container.portal_membership.getHomeUrl(userid, verifyPermission=1);
+                            portrait python:here.portal_membership.getPersonalPortrait(userid);
+                            member python:pakki.getUserById(userid);
+                            nickname python:member and member.getProperty('nickname');
+                            local_group python:member and member.getProperty('local_group');
+                            phone python:member and member.getProperty('phone');
+                            last_login_time python:member and member.getProperty('last_login_time') and pakki.formatTimeForViewlet(member.getProperty('last_login_time'));
+                            roles python:member and member.getProperty('roles');
+                            groups python:member and pakki.getViewableGroups(member);
+                            author_details_url string:${portal_url}/author/${userid};
+                            prefs_user_details_url string:${portal_url}/@@user-information?userid=${userid}">
+                <td style="text-align: center;">
+                    <a href="#" tal:attributes="href home">
+                        <img src="defaultUser.gif"
+                             alt=""
+                             border="0"
+                             width="75"
+                             height="100"
+                             tal:attributes="src portrait/absolute_url" />
+                    </a><br/>
+                </td>
+                <td>
+                    <div><strong tal:content="fullname">full name</strong></div>
+                    <div tal:condition="nickname">"<span tal:content="nickname">nickname</span>"</div>
+                    <br/>
+                    <div tal:content="local_group">local_group</div>
+                    <div tal:content="phone">phone</div>
+                    <div tal:content="email">email</div>
+                    <div class="visualNoPrint" tal:condition="python:user.has_role('Manager')">
+                        <br/>(<a href="#" tal:attributes="href prefs_user_details_url">Muokkaa&nbsp;k&auml;ytt&auml;j&auml;&auml;</a>)
+                    </div>
+                </td>
+                <td>
+                    <div tal:condition="roles">
+                        <span tal:content="roles">roles</span><br/><br/>
+          </div>
+          <metal:block tal:repeat="group groups">
+                        <a href="#" tal:attributes="href string:member_search_results?groups=%5E${group}%24" tal:content="group">
+                            group
+                        </a><span tal:condition="not:repeat/group/end">, </span>
+                    </metal:block>
+                </td>
+                <td class="visualNoPrint">
+                    <div>
+                        K&auml;ytt&auml;j&auml;tunnus:<br/>
+                        <a href="#" tal:content="userid" tal:attributes="href author_details_url">userid</a><br/>
+                        <br/>
+                    </div>
+
+                    <tal:comment replace="nothing">
+                        Only show the user admin link if the user would be able to do admin.
+                        The real permission checks are done on the target page, of course.
+                    </tal:comment>
+
+                    <div>
+                        Kirjautunut viimeksi:<br/>
+                        <span tal:condition="not:last_login_time">ei ikin&auml;</span>
+                        <span tal:condition="last_login_time" tal:content="last_login_time"></span>
+                    </div>
+                </td>
+            </tr>
+        </metal:block>
+        </tbody>
+        </table>
+
+        <!-- Navigation -->
+        <div class="visualClear" id="clear-space-before-navigation"><!-- --></div>
+
+        <div metal:use-macro="here/batch_macros/macros/navigation" />
+
+        <div class="visualClear" id="clear-space-after-navigation"><!-- --></div>
+
+    </div>
+
+    <div tal:condition="not: results">
+        <p><strong i18n:translate="description_no_results_found">No results were found.</strong></p>
+    </div>
+
+</div>
+
+</html>

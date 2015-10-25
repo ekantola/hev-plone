@@ -1,0 +1,38 @@
+<div class="visualClear"><!-- --></div>
+<div i18n:domain="plone"
+     class="documentActions">
+    <tal:docactions tal:condition="view/actions">
+
+    <h5 class="hiddenStructure" i18n:translate="heading_document_actions">Document Actions</h5>
+
+    <ul tal:define="normalizeString nocall: context/@@plone/normalizeString">
+    <!--
+    <tal:actions repeat="daction view/actions">
+        <li tal:attributes="id python:'document-action-' + normalizeString(daction['id'])">
+            <a href=""
+               tal:attributes="href daction/url;
+                               title daction/description"
+               tal:content="daction/title">
+            </a>
+        </li>
+    </tal:actions>
+    -->
+        <li id="document-action-share-this">
+        <!-- AddThis Button BEGIN -->
+            <div class="addthis_toolbox addthis_default_style">
+                <a href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4b28d5d907069b46" class="addthis_button_compact">Jaa</a>
+                <span class="addthis_separator">|</span>
+                <a class="addthis_button_facebook"></a>
+                <a class="addthis_button_myspace"></a>
+                <a class="addthis_button_print"></a>
+                <a class="addthis_button_twitter"></a>
+            </div>
+            <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4b28d5d907069b46"></script>
+        <!-- AddThis Button END -->
+        </li> 
+    </ul>
+    </tal:docactions>
+
+    <div tal:replace="structure provider:plone.documentactions" />
+
+</div>

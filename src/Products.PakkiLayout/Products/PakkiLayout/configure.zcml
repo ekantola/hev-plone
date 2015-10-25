@@ -1,0 +1,19 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="Products.PakkiLayout">
+
+    <include package="plone.app.portlets" />
+
+    <include package=".browser" />
+    <include package=".portlet" />
+    <include package=".scripts" />
+    <include package=".viewlets" />
+
+    <include file="skins.zcml" />
+    <include file="profiles.zcml" />
+
+
+</configure>

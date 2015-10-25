@@ -1,0 +1,116 @@
+/*
+  This file is based on the ploneCustom.css.dtml file shipped with Plone.
+
+  <dtml-with base_properties> (do not remove this)
+  <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either)
+*/
+
+/* YOUR CSS RULES START HERE */
+
+div { font-family: <dtml-var fontFamily>; margin: 0px; padding: 0px; }
+
+/*
+ * Topnav
+ */
+#portal-siteactions li { display: inline; }
+#portal-searchbox { position: absolute; display: block; right: 10px; top: 90px; height: 25px; }
+#portal-searchbox .LSResult { background-color: #ffffff; white-space: normal; position: absolute; right: 60px; z-index: 100; }
+
+#portal-header { background: url(&dtml-portal_url;/topnav_levee.png) no-repeat; width: 100%; height: 161px; }
+#portal-logo { position: absolute; left: 0; top: 0; }
+
+#portal-globalnav { position: relative; top: 134px; left: 235px; height: 33px; margin:0; padding: 0; list-style: none outside none; z-index: 3; }
+#portal-globalnav li { float: left; list-style: inherit; }
+
+.template-login_form #portal-personaltools-wrapper,
+.template- #portal-personaltools-wrapper,
+.template-personalize_form #portal-personaltools-wrapper,
+.template-plone_control_panel #portal-personaltools-wrapper { visibility: hidden }
+
+#portal-top { position: relative; }
+
+#portal-column-one { background-color: &dtml-papaVaaleansininen;; background-repeat: no-repeat; height: 800px; }
+#portal-column-one .navTreeItem div:hover,
+#portal-column-one dd.portletItem .navTreeItem div:hover { background-color: &dtml-papaVaaleansininen;; }
+#portal-column-one .navTreeItem a:hover,
+#portal-column-one dd.portletItem .navTreeItem a:hover { background-color: &dtml-papaVaaleansininen;; }
+
+/*
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: &dtml-partioSininen; !important; font-weight: normal; }
+
+h1 { font-size: 1.7em; }
+h2 { font-size: 1.5em; margin-bottom: 0; }
+
+/*
+ * Documents
+ */
+.documentDescription { margin-top: 10px; }
+.documentByLine { color: &dtml-partioHarmaa;; font-size: smaller; font-weight: normal; }
+.documentByLine a { color: &dtml-partioHarmaa;; }
+
+dd { line-height: 1.4em; }
+
+/*
+ * Lists
+ */
+#content li { margin-left: 1.5em; }
+
+/*
+ * Portlets
+ */
+#portal-column-content .portletFooter { padding-right: 0; }
+
+/*
+ * Tables
+ */
+#content table.plain { border: 2px solid &dtml-partioSininen;; border-collapse: collapse; margin: 5px; padding: 5px; spacing: 5px; }
+#content table.plain th { background-color: &dtml-partioSininen;; border: 1px solid #ffffff; color: #ffffff; padding: 5px; text-transform: uppercase; }
+#content table.plain th a { color: #ffffff; }
+#content table.plain td { border: 1px solid &dtml-partioSininen;; padding: 5px; }
+
+/*
+ * Album view classes
+ */
+.photoAlbumEntry {
+  float: left;
+  position: relative;
+  overflow: hidden;
+  height: 185px;
+  width: 143px;
+  margin: 0em;
+  padding: 0px 6px 0px 9px;
+  text-align: center;
+  background-image: url('&dtml-portal_url;/polaroid-single.png');
+  background-repeat: no-repeat;
+}
+.photoAlbumEntry img { border: 1px solid #ccc; display: block; margin: 0 auto; }
+.photoAlbumEntryWrapper { height: 130px; width: 128px; margin-bottom: 7px; }
+.photoAlbumEntry a { display: block; text-decoration: none; font-size: &dtml-fontSmallSize;; height: 169px; width: 130px; margin: 16px auto 0px; overflow: hidden; }
+.photoAlbumFolder { background-image: url('&dtml-portal_url;/polaroid-multi.png'); background-repeat: no-repeat; }
+.photoAlbumEntryTitle { color: &dtml-discreetColor;; display: block; width: 128px; height: 3.6em; }
+
+/*
+ * Breadcrumbs
+ */
+#portal-breadcrumbs { position: absolute; top: 161px; left: 5px; z-index: 1; color: &dtml-partioSininen;; overflow: visible; white-space: nowrap; }
+#portal-breadcrumbs a { text-decoration: none; }
+#portal-breadcrumbs a:hover { text-decoration: underline; }
+
+/*
+ * Editor image alignment classes
+ */
+.image-left { float: left; clear: both; margin: 0.5em 1em 0.5em 0; border: 1px solid black; }
+.image-inline { float: none; }
+.image-right { float: right; clear: both; margin: 0.5em; border: 1px solid black; }
+dd.image-caption { text-align: left; padding: 0; margin: 0; }
+dl.captioned { padding: 10px; }
+
+/* YOUR CSS RULES STOP HERE */
+
+/* </dtml-with> */
+
+/* Latest version of the documentation on pre-defined properties from Plone
+   can be found in CMFPlone/skins/classic_styles/ploneCustom.css.dtml */
+

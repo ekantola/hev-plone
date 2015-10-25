@@ -1,0 +1,16 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="Products.Pakki">
+
+   <browser:page
+      for="Products.CMFCore.interfaces.IFolderish"
+      name="import_events"
+      class=".importer.ImportEventsView"
+      template="import_events.pt"
+      permission="cmf.AddPortalContent"
+      allowed_attributes="get_imported"
+      />
+
+</configure>

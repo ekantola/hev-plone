@@ -1,0 +1,32 @@
+/* <dtml-with base_properties>  
+   <dtml-call "REQUEST.set('portal_url', portal_url())"> 
+ */
+
+
+div #pakki-calendar-viewlet {
+	float: right;
+	width: 190px;
+	height: 125px;
+	margin-right: 20px;
+	background-color: wheat;
+} 
+
+a:link #pakki-calendar-viewlet {
+	color: white;
+}
+
+a:visited #pakki-calendar-viewlet {
+	color: white;
+}
+
+a:hover #pakki-calendar-viewlet {
+	color: white;
+}
+
+a:active #pakki-calendar-viewlet {
+	color: white;
+}
+	
+
+/* </dtml-with> */
+

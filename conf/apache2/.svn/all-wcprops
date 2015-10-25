@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/pakki/!svn/ver/648/conf/apache2
+END
+http.conf
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/pakki/!svn/ver/648/conf/apache2/http.conf
+END
+main
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/pakki/!svn/ver/635/conf/apache2/main
+END
+https.conf
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/pakki/!svn/ver/636/conf/apache2/https.conf
+END
+awstats.conf
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/pakki/!svn/ver/629/conf/apache2/awstats.conf
+END
+common.conf
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/pakki/!svn/ver/634/conf/apache2/common.conf
+END

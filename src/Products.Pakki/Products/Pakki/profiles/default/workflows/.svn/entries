@@ -1,0 +1,43 @@
+10
+
+dir
+676
+http://pakki-dev.papa.partio.fi/svn/pakki/buildout/trunk/src/Products.Pakki/Products/Pakki/profiles/default/workflows
+http://pakki-dev.papa.partio.fi/svn/pakki
+
+
+
+2011-04-21T16:50:15.943203Z
+638
+ekantola
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+3a49ef27-07d0-4080-9444-c402a6867b0d
+
+pakki_ploneboard_comment_workflow
+dir
+
+pakki_ploneboard_forum_workflow
+dir
+
+pakki_ploneboard_conversation_workflow
+dir
+
+pakki_workflow
+dir
+
+pakki_ploneboard_workflow
+dir
+

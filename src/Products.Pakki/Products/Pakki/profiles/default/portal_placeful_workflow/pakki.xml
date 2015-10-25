@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<object name="pakki" meta_type="WorkflowPolicy">
+ <property name="title">Pakki</property>
+ <bindings>
+  <default>
+   <bound-workflow workflow_id="pakki_workflow"/>
+  </default>
+  <type default_chain="true" type_id="Document"/>
+  <type default_chain="true" type_id="Event"/>
+  <!--type default_chain="true" type_id="Favorite"/--><!-- not Plone 4 compatible -->
+  <type default_chain="true" type_id="File"/>
+  <type default_chain="true" type_id="Folder"/>
+  <type default_chain="true" type_id="Image"/>
+  <!--type default_chain="true" type_id="Large Plone Folder"/--><!-- not Plone 4 compatible -->
+  <type default_chain="true" type_id="Link"/>
+  <type default_chain="true" type_id="News Item"/>
+  <type default_chain="true" type_id="Topic"/>
+  <!--type default_chain="true" type_id="PoiTracker"/>
+  <type default_chain="true" type_id="PoiIssue"/>
+  <type default_chain="true" type_id="PoiResponse"/-->
+ </bindings>
+</object>

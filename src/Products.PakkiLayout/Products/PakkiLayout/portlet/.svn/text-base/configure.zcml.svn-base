@@ -1,0 +1,123 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:plone="http://namespaces.plone.org/plone">
+
+    <!-- Portlets -->
+
+    <!-- We need to include the package of the portlets we are customising -->
+    <include package="plone.app.portlets" />
+    <include package="plone.portlet.collection"/>
+    <include package="Products.Ploneboard"/>
+
+    <!-- Register the portlet -->
+
+     <plone:portlet
+         name="pakki2.ImageCollection"
+         interface=".collection.IImageCollectionPortlet"
+         assignment=".collection.Assignment"
+         view_permission="zope2.View"
+         edit_permission="plone.portlet.collection.AddCollectionPortlet"
+         renderer=".collection.Renderer"
+         addview=".collection.AddForm"
+         editview=".collection.EditForm"
+         />
+
+     <plone:portletRenderer
+        portlet=".collection.IImageCollectionPortlet"
+        layer=".interfaces.IThemeSpecific"
+        template="imageCollection.pt"
+        />
+
+
+     <plone:portlet
+         name="pakki2.NewsCollection"
+         interface=".newsCollection.INewsCollectionPortlet"
+         assignment=".newsCollection.Assignment"
+         view_permission="zope2.View"
+         edit_permission="plone.portlet.collection.AddCollectionPortlet"
+         renderer=".newsCollection.Renderer"
+         addview=".newsCollection.AddForm"
+         editview=".newsCollection.EditForm"
+         />
+
+     <plone:portletRenderer
+        portlet=".newsCollection.INewsCollectionPortlet"
+        layer=".interfaces.IThemeSpecific"
+        template="newsCollection.pt"
+        />
+
+     <plone:portlet
+         name="pakki2.EventCollection"
+         interface=".eventCollection.IEventCollectionPortlet"
+         assignment=".eventCollection.Assignment"
+         view_permission="zope2.View"
+         edit_permission="plone.portlet.collection.AddCollectionPortlet"
+         renderer=".eventCollection.Renderer"
+         addview=".eventCollection.AddForm"
+         editview=".eventCollection.EditForm"
+         />
+
+     <plone:portletRenderer
+        portlet=".eventCollection.IEventCollectionPortlet"
+        layer=".interfaces.IThemeSpecific"
+        template="eventCollection.pt"
+        />
+
+     <plone:portlet
+         name="pakki2.ViikonKuva"
+         interface=".viikonKuva.IViikonKuvaPortlet"
+         assignment=".viikonKuva.Assignment"
+         view_permission="zope2.View"
+         edit_permission="plone.portlet.collection.AddCollectionPortlet"
+         renderer=".viikonKuva.Renderer"
+         addview=".viikonKuva.AddForm"
+         editview=".viikonKuva.EditForm"
+         />
+
+     <plone:portletRenderer
+        portlet=".viikonKuva.IViikonKuvaPortlet"
+        layer=".interfaces.IThemeSpecific"
+        template="viikonKuva.pt"
+        />
+
+     <plone:portlet
+         name="pakki2.Keskustelu"
+         interface=".keskustelu.IKeskusteluPortlet"
+         assignment=".keskustelu.Assignment"
+         view_permission="zope2.View"
+         edit_permission="plone.portlet.collection.AddCollectionPortlet"
+         renderer=".keskustelu.Renderer"
+         addview=".keskustelu.AddForm"
+         editview=".keskustelu.EditForm"
+         />
+
+     <plone:portletRenderer
+        portlet=".keskustelu.IKeskusteluPortlet"
+        layer=".interfaces.IThemeSpecific"
+        template="keskustelu.pt"
+        />
+
+     <plone:portlet
+         name="pakki2.MyGroups"
+         interface=".myGroups.IMyGroupsPortlet"
+         assignment=".myGroups.Assignment"
+         view_permission="zope2.View"
+         edit_permission="plone.portlet.collection.AddCollectionPortlet"
+         renderer=".myGroups.Renderer"
+         addview=".myGroups.AddForm"
+         editview=".myGroups.EditForm"
+         />
+
+     <plone:portletRenderer
+        portlet=".myGroups.IMyGroupsPortlet"
+        layer=".interfaces.IThemeSpecific"
+        template="myGroups.pt"
+        />
+
+  <plone:portlet
+     name="pakki2.MyLogin"
+     interface=".mylogin.IMyLoginPortlet"
+     assignment=".mylogin.Assignment"
+     renderer=".mylogin.Renderer"
+     addview=".mylogin.AddForm"
+  />
+</configure>

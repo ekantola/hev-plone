@@ -1,0 +1,22 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="Products.Pakki">
+
+    <genericsetup:registerProfile
+        name="default"
+        title="Pakki Site Policy"
+        directory="profiles/default"
+        description="Turn a Plone site into the Pakki site."
+        provides="Products.GenericSetup.interfaces.EXTENSION"/>
+
+    <!-- Views -->
+    <include package=".browser" />
+
+	<!-- Include normalizers -->
+	<include package=".normalizer" />
+
+	<!-- Include direct package dependencies -->
+	<include package="Products.PakkiLayout" />
+</configure>

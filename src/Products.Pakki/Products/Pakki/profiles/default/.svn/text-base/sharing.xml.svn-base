@@ -1,0 +1,10 @@
+<sharing xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+         i18n:domain="plone">
+  <!-- Adds a "Can manage" checkbox to Sharing tab so that local manager roles are possible -->
+  <role
+    id="Manager"
+    title="Can manage"
+    permission="Manage portal"
+    i18n:attributes="title"
+    />
+</sharing>

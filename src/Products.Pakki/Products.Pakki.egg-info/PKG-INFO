@@ -1,0 +1,76 @@
+Metadata-Version: 1.0
+Name: Products.Pakki
+Version: 1.0.7dev-r638
+Summary: Pakki v2 dependency package
+Home-page: http://pakki2.nudata.fi/svn/pakki
+Author: Eemeli Kantola, Arttu Voutilainen, Pekka Kantola
+Author-email: eemeli.kantola@iki.fi
+License: BSD
+Description: Introduction
+        ============
+        
+        Pakki is a Plone dependency and configuration product for a
+        organizational CMS/intranet system.
+        
+        
+        Changelog
+        =========
+        
+        1.0.7 - Released 2009-10-21
+        ----------------
+        
+        * Fixed @@import_events issues and removed unnecessary debugging code
+        
+        1.0.6 - Released 2009-10-21
+        ----------------
+        
+        * @@import_events view for batch-importing Events into a folder
+        
+        1.0.5 - Released 2009-08-18
+        ----------------
+        
+        * Removed "Add portal content" permission from Member for internally_published
+        
+        1.0.4 - Released 2009-06-16
+        ----------------
+        
+        * Fixed international chars in profile
+        
+        1.0.3 - Released 2009-06-10
+        ----------------
+        
+        * Fixed mail POI fi i18n for mail templates
+        
+        1.0.2 - Released 2009-06-03
+        ----------------
+        
+        * Added initial fi-tranlations for POI
+        
+        1.0.1 - Released 2009-05-28
+        ----------------
+        
+        * Added edit event fi localization for URL
+        
+        1.0 - Unreleased
+        ----------------
+        
+        * "Inherit" state to the Pakki workflow
+        
+        0.3 - Unreleased
+        ----------------
+        
+        * Ploneboard specific workflows
+        
+        0.2 - Unreleased
+        ----------------
+        
+        * Started creating the policy product with tests
+        
+        0.1 - Unreleased
+        ----------------
+        
+        * Initial release
+        
+Platform: UNKNOWN
+Classifier: Framework :: Plone
+Classifier: Programming Language :: Python

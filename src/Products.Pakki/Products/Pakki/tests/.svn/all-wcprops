@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/pakki/!svn/ver/638/buildout/trunk/src/Products.Pakki/Products/Pakki/tests
+END
+base.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/pakki/!svn/ver/444/buildout/trunk/src/Products.Pakki/Products/Pakki/tests/base.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/pakki/!svn/ver/444/buildout/trunk/src/Products.Pakki/Products/Pakki/tests/__init__.py
+END
+test_setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/pakki/!svn/ver/593/buildout/trunk/src/Products.Pakki/Products/Pakki/tests/test_setup.py
+END

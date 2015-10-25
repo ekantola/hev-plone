@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/pakki/!svn/ver/638/buildout/trunk/src/Products.TestProduct/Products/TestProduct/browser/tests
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/pakki/!svn/ver/345/buildout/trunk/src/Products.TestProduct/Products/TestProduct/browser/tests/__init__.py
+END
+test_importer.py
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/pakki/!svn/ver/345/buildout/trunk/src/Products.TestProduct/Products/TestProduct/browser/tests/test_importer.py
+END

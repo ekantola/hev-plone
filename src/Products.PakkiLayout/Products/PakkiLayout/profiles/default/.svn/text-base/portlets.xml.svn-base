@@ -1,0 +1,43 @@
+<portlets>
+     <portlet
+         addview="pakki2.MyLogin"
+         title="MyLogin"
+         description="Pakki login-portletti"
+     />
+
+     <portlet
+         addview="pakki2.MyGroups"
+         title="MyGroups"
+         description="Omat Pakki-ryhmat"
+     />
+
+     <portlet
+         addview="pakki2.ImageCollection"
+         title="Image Collection"
+         description="Kuvakokoelma"
+     />
+
+     <portlet
+         addview="pakki2.NewsCollection"
+         title="News Collection"
+         description="Uutiskokoelma"
+     />
+
+     <portlet
+         addview="pakki2.EventCollection"
+         title="Event Collection"
+         description="Tapahtumakokoelma"
+     />
+
+     <portlet
+         addview="pakki2.ViikonKuva"
+         title="Viikon kuva"
+         description="Nayttaa yhden valitun viikon kuvan"
+     />
+
+     <portlet
+         addview="pakki2.Keskustelu"
+         title="Uusimmat keskustelut"
+         description="Nayttaa uusimmat keskustelut"
+     />
+</portlets>

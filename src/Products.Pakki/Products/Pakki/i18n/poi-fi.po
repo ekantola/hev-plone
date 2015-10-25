@@ -1,0 +1,1009 @@
+# pot file for Poi Issue Tracker product.
+# Junyong Pan <panjy@zopechina.com>, 2005.
+msgid ""
+msgstr ""
+"Project-Id-Version: Poi\n"
+"POT-Creation-Date: 2009-03-26 21:35+0000\n"
+"PO-Revision-Date: 2009-06-03 01:25+0300\n"
+"Last-Translator: Eemeli Kantola <eemeli.kantola@iki.fi>\n"
+"Language-Team: pakki@papa.partio.fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: Poi\n"
+
+msgid "An issue. Issues begin in the 'unconfirmed' state, and can be responded to by project managers."
+msgstr "Ongelma. Ongelmaraportit ovat aluksi tilassa 'vahvistamaton', jolloin kehittäjät voivat ottaa niihin kantaa."
+
+#: ../skins/Poi/poi_response_delete_confirm.cpt:41
+#. Default: "Cancel"
+msgid "Cancel"
+msgstr "Peruuta"
+
+#: ../browser/response.py:497
+msgid "Changes saved to response id ${response_id}."
+msgstr "Muutokset tallennettu vastausnumerolle ${response_id}."
+
+#: ../skins/Poi/poi_response_delete_confirm.cpt:34
+#. Default: "Delete"
+msgid "Delete"
+msgstr "Poista"
+
+#: ../browser/response.pt:17
+#. Default: "Edit"
+msgid "Edit"
+msgstr "Muokkaa"
+
+#: ../skins/Poi/poi_issue_view.pt:151
+#. Default: "Edit issue"
+msgid "Edit issue"
+msgstr "Muokkaa ongelmaraporttia"
+
+#: ../browser/response.py:394
+msgid "Issue state"
+msgstr "Ongelman tila"
+
+#: ../browser/response.py:526
+msgid "No response selected for removal."
+msgstr "Yhtään vastausta ei ole valittu poistoa varten."
+
+#: ../browser/response.py:488
+msgid "No response selected for saving."
+msgstr "Yhtään vastausta ei ole valittu tallennusta varten."
+
+#: ../browser/response.py:186
+msgid "No response selected."
+msgstr "Yhtään vastausta ei ole valittu."
+
+#: ../browser/response.py:440
+msgid "No response text added and no issue changes made."
+msgstr "Vastaustekstiä ei lisätty eikä muutoksia tehty."
+
+#: ../content/PoiIssue.py:530
+msgid "None"
+msgstr "Ei mitään"
+
+#. Default: "Select the area this issue is relevant to."
+# ./content/PoiIssue.py
+msgid "Poi_help_area"
+msgstr "Valitse alue, johon tämä ongelma kuuluu."
+
+#: ../browser/response.pt:147
+#. Default: "You may optionally upload a file attachment. Please do not upload unnecessarily large files."
+msgid "Poi_help_attachment"
+msgstr "Voit halutessasi lisätä liitetiedoston. Ethän liitä tarpeettoman isoja tiedostoja."
+
+#. Default: "Enter the issue topics/areas for this tracker, one specification per line. The format is \"Short name | Title | Description\"."
+# ./content/PoiTracker.py
+msgid "Poi_help_availableAreas"
+msgstr "Syötä ongelman teemat/alueet tälle seurantajärjestelmälle."
+
+#. Default: "Enter the issue types for this tracker, one specification per line.  The format is \"Short name | Title | Description\"."
+# ./content/PoiTracker.py
+msgid "Poi_help_availableIssueTypes"
+msgstr "Syötä ongelmatyypit tälle seurantajärjestelmälle."
+
+#. Default: "Enter the releases which issues can be assigned to, one per line.  If no releases are entered, issues will not be organised by release."
+# ./content/PoiTracker.py
+msgid "Poi_help_availableReleases"
+msgstr "Syötä julkaisunumerot, joihin ongelmia voi sijoittaa, kukin omalle rivilleen. Jos et syötä julkaisunumeroita, ongelmia ei järjestetä julkaisuittain."
+
+#. Default: "Enter the different type of issue severities that should be available, one per line."
+# ./content/PoiTracker.py
+msgid "Poi_help_availableSeverities"
+msgstr "Syötä käytettävissä olevat ongelmien vakavuustasot, kukin omalle rivilleen."
+
+#. Default: "Optionally, provide an email address where you can be contacted for further information or when a resolution is available."
+# ./content/PoiIssue.py
+msgid "Poi_help_contactEmail"
+msgstr "Anna sähköpostiosoitteesi, jota voidaan käyttää lisätietojen kyselyssä tai kun ratkaisu ongelmaan on löydetty. Huom: osoitetta ei näytetä muille käyttäjille."
+
+#. Default: "Select the default severity for new issues."
+# ./content/PoiTracker.py
+msgid "Poi_help_defaultSeverity"
+msgstr "Valitse oletusvakavuus uusille ongelmille."
+
+#. Default: "Enter a brief overview of the issue. As with the title, a concise, meaningful description will make it easier for project managers to assess and respond to an issue."
+# ./content/PoiIssue.py
+msgid "Poi_help_description"
+msgstr "Kuvaile tämän ongelmaseurannan tehtävää"
+
+#. Default: "Please provide further details"
+# ./content/PoiIssue.py
+msgid "Poi_help_details"
+msgstr "Anna lisätietoja"
+
+#. Default: "Enter any introductory help text you'd like to display on the tracker front page."
+# ./content/PoiTracker.py
+msgid "Poi_help_helpText"
+msgstr "Anna esittelyteksti, joka näytetään ongelmaseurannan etusivulla."
+
+#: ../browser/response.pt:172
+#. Default: "Select a change of state in the issue this response is for, if applicable"
+msgid "Poi_help_issueTransition"
+msgstr "Valitse ongelmaraportin uusi tila vastauksen jälkeen"
+
+#. Default: "Select the type of issue."
+# ./content/PoiIssue.py
+msgid "Poi_help_issueType"
+msgstr "Valitse ongelman tyyppi."
+
+#. Default: "Enter a short, descriptive title for the issue. A good title will make it easier for project managers to identify and respond to the issue."
+# ./content/PoiIssue.py
+msgid "Poi_help_issue_title"
+msgstr "Kirjoita lyhyt, kuvaava otsikko ongelmalle. Hyvä otsikko helpottaa kehittäjiä tunnistamaan ja ratkaisemaan ongelman."
+
+#. Default: "If given, and if "Send notification emails" is selected, an email will be sent to this address each time a new issue or response is posted. If no mailing list address is given, managers will receive individual emails."
+# ./content/PoiTracker.py
+msgid "Poi_help_mailingList"
+msgstr "Jos osoite on asetettu ja jos \"Lähetä muutoksista sähköposti-ilmoitus\" on valittu, lähetetään tähän osoitteeseen aina ilmoitus, kun uusi ongelmaraportti tai vastaus on lähetetty. Jos sähköpostilistaa ei ole asetettu, kehittäjille lähetetään erilliset viestit."
+
+#. Default: "Enter the user ids of the users who will be allowed to manage this tracker, one per line."
+# ./content/PoiTracker.py
+msgid "Poi_help_managers"
+msgstr "Syötä kehittäjien käyttäjätunnukset tähän, kukin omalle rivilleen."
+
+#: ../browser/response.pt:261
+#. Default: "Select the responsible manager for this issue"
+msgid "Poi_help_newResponsibleManager"
+msgstr "Valitse tälle ongelmalle vastuullinen kehittäjä"
+
+#: ../browser/response.pt:204
+#. Default: "Select the severity for this issue"
+msgid "Poi_help_newSeverity"
+msgstr "Valitse vakavuus tälle ongelmalle"
+
+#: ../browser/response.pt:232
+#. Default: "Set the target release for this issue"
+msgid "Poi_help_newTargetRelease"
+msgstr "Valitse kohdejulkaisu tämän ongelman ratkaisulle"
+
+#. Default: "Select the release this issue pertains to."
+# ./content/PoiIssue.py
+msgid "Poi_help_release"
+msgstr "Valitse versio, jossa tämä ongelma havaittiin."
+
+#: ../browser/response.pt:107
+#. Default: "Please enter your response below"
+msgid "Poi_help_response"
+msgstr "Kirjoita vastauksesi tähän"
+
+#. Default: "Enter a brief subject for this response, e.g. \"Fixed\" or \"Will be fixed in next release\".""
+# ./content/PoiIssue.py
+msgid "Poi_help_response_title"
+msgstr "Anna lyhyt otsikko tälle vastaukselle. Esim: \"Korjattu\" tai \"Korjataan seuraavassa julkaisussa\"."
+
+#. Default: "Select which manager, if any, is responsible for this issue."
+# ./content/PoiIssue.py
+msgid "Poi_help_responsibleManager"
+msgstr "Valitse, kuka kehittäjistä on vastuussa tämän ongelman ratkaisemisesta."
+
+#. Default: "If selected, tracker managers will receive an email each time a new issue or response is posted, and issue submitters will receive an email when there is a new response and when an issue has been resolved, awaiting confirmation."
+# ./content/PoiTracker.py
+msgid "Poi_help_sendNotificationEmails"
+msgstr "Jos valittuna, kehittäjät saavat sähköpostiviestin aina, kun uusi ongelmaraportti tai vastaus on lähetetty, ja raportoijat saavat viestin aina, kun raportteihin vastataan tai jos ongelma on saatu ratkaistua."
+
+#. Default: "Select the severity of this issue."
+# ./content/PoiIssue.py
+msgid "Poi_help_severity"
+msgstr "Valitse ongelman vakavuus."
+
+#. Default: "If applicable, please provide the steps to reproduce the error or identify the issue, one per line."
+# ./content/PoiIssue.py
+msgid "Poi_help_steps"
+msgstr "Jos mahdollista, kirjaa tähän askeleet, joilla ongelmatilanne saadaan toistettua tai ongelma tunnistettua."
+
+#. Default: "Tags can be used to add arbitrary categorisation to issues. The list below shows existing tags which you can select, or you can add new ones."
+# ./content/PoiIssue.py
+msgid "Poi_help_subject"
+msgstr "Tägejä voidaan käyttää ongelmien vapaaseen luokitteluun. Alla oleva lista näyttää olemassaolevat tunnisteet, joita voit valita, tai voit myös luoda uusia tunnisteita."
+
+#. Default: "Please enter the Url to the related SVN repository, e.g.: http://dev.plone.org/collective/changeset/%(rev)s for products in the Plone collective."
+# ./content/PoiTracker.py
+msgid "Poi_help_svnurl"
+msgstr "Syötä tähän ongelmaseurantaan liittyvä Subversion-varaston URL, esim. Plone collectiven tuotteilla http://dev.plone.org/collective/changeset/%(rev)s ."
+
+#. Default: "Release this issue is targetted to be fixed in"
+# ./content/PoiIssue.py
+msgid "Poi_help_targetRelease"
+msgstr "Julkaisu, jossa tämä ongelma on tarkoitus korjata"
+
+#. Default: "Enter a descriptive name for this tracker"
+# ./content/PoiTracker.py
+msgid "Poi_help_tracker_title"
+msgstr "Syötä kuvaava nimi tälle ongelmaseurannalle"
+
+#. Default: "Enter the user names of members who are watching this issue, one per line. These members will receive an email when a response is added to the issue. Members can also add themselves as watchers."
+# ./content/PoiIssue.py
+msgid "Poi_help_watchers"
+msgstr "Syötä tätä ongelmaa tarkkailevien jäsenten käyttäjätunnukset, kukin omalla rivillään. Nämä jäsenet saavat sähköpostiviestin aina, kun ongelmaan on lähetetty vastaus. Käyttäjät voivat myös lisätä itsensä tarkkailijoiksi."
+
+#. Default: "Area"
+# ./content/PoiIssue.py
+msgid "Poi_label_area"
+msgstr "Alue"
+
+#: ../browser/response.pt:144
+#. Default: "Attachment"
+msgid "Poi_label_attachment"
+msgstr "Liitetiedosto"
+
+#. Default: "Areas"
+# ./content/PoiTracker.py
+msgid "Poi_label_availableAreas"
+msgstr "Alueet"
+
+#. Default: "Issue types"
+# ./content/PoiTracker.py
+msgid "Poi_label_availableIssueTypes"
+msgstr "Ongelmatyypit"
+
+#. Default: "Available releases"
+# ./content/PoiTracker.py
+msgid "Poi_label_availableReleases"
+msgstr "Julkaisut"
+
+#. Default: "Available severities"
+# ./content/PoiTracker.py
+msgid "Poi_label_availableSeverities"
+msgstr "Käytettävissä olevat vakavuustasot"
+
+#. Default: "Contact email address"
+# ./content/PoiIssue.py
+msgid "Poi_label_contactEmail"
+msgstr "Yhteyshenkilön sähköposti"
+
+#. Default: "Default severity"
+# ./content/PoiTracker.py
+msgid "Poi_label_defaultSeverity"
+msgstr "Oletusvakavuus"
+
+#. Default: "Tracker description"
+# ./content/PoiTracker.py
+msgid "Poi_label_description"
+msgstr "Ongelmaseurannan kuvaus"
+
+#. Default: "Details"
+# ./content/PoiIssue.py
+msgid "Poi_label_details"
+msgstr "Yksityiskohdat"
+
+#. Default: "Help Text"
+# ./content/PoiTracker.py
+msgid "Poi_label_helpText"
+msgstr "Esittelyteksti"
+
+#. Default: "Id"
+# ./content/PoiIssue.py
+msgid "Poi_label_id"
+msgstr "Tunniste"
+
+#: ../browser/response.pt:167
+#. Default: "Change issue state"
+msgid "Poi_label_issueTransition"
+msgstr "Muuta tilaa"
+
+#. Default: "Issue type"
+# ./content/PoiIssue.py
+msgid "Poi_label_issueType"
+msgstr "Ongelman tyyppi"
+
+#. Default: "Title"
+# ./content/PoiIssue.py
+msgid "Poi_label_issue_title"
+msgstr "Ongelman otsikko"
+
+#. Default: "Mailing list"
+# ./content/PoiTracker.py
+msgid "Poi_label_mailingList"
+msgstr "Sähköpostilista"
+
+#. Default: "Tracker managers"
+# ./content/PoiTracker.py
+msgid "Poi_label_managers"
+msgstr "Kehittäjät"
+
+#: ../browser/response.pt:256
+#. Default: "Change responsible manager"
+msgid "Poi_label_newResponsibleManager"
+msgstr "Muuta vastuuhenkilöä"
+
+#: ../browser/response.pt:199
+#. Default: "Change issue severity"
+msgid "Poi_label_newSeverity"
+msgstr "Muuta ongelman vakavuutta"
+
+#: ../browser/response.pt:227
+#. Default: "Change target release"
+msgid "Poi_label_newTargetRelease"
+msgstr "Muuta kohdejulkaisua"
+
+#. Default: "Release"
+# ./content/PoiIssue.py
+msgid "Poi_label_release"
+msgstr "Versio"
+
+#: ../browser/edit_response.pt:50
+#. Default: "Response"
+msgid "Poi_label_response"
+msgstr "Vastaus"
+
+#. Default: "Subject"
+# ./content/PoiIssue.py
+msgid "Poi_label_response_title"
+msgstr "Vastauksen otsikko"
+
+#. Default: "Responsible"
+# ./content/PoiIssue.py
+msgid "Poi_label_responsibleManager"
+msgstr "Vastuuhenkilö"
+
+#. Default: "Send notification emails"
+# ./content/PoiTracker.py
+msgid "Poi_label_sendNotificationEmails"
+msgstr "Lähetä muutosilmoitussähköposteja"
+
+#. Default: "Severity"
+# ./content/PoiIssue.py
+msgid "Poi_label_severity"
+msgstr "Vakavuus"
+
+#. Default: "Steps to reproduce"
+# ./content/PoiIssue.py
+msgid "Poi_label_steps"
+msgstr "Askeleet ongelman todentamiseen"
+
+#. Default: "Tags"
+# ./content/PoiIssue.py
+msgid "Poi_label_subject"
+msgstr "Tägit"
+
+#. Default: "URL to SVN"
+# ./content/PoiTracker.py
+msgid "Poi_label_svnurl"
+msgstr "SVN-URL"
+
+#. Default: "Target release"
+# ./content/PoiIssue.py
+msgid "Poi_label_targetRelease"
+msgstr "Kohdejulkaisu"
+
+#. Default: "Tracker name"
+# ./content/PoiTracker.py
+msgid "Poi_label_tracker_title"
+msgstr "Otsikko"
+
+#. Default: "Issue watchers"
+# ./content/PoiIssue.py
+msgid "Poi_label_watchers"
+msgstr "Tarkkailijat"
+
+#: ../browser/response.py:548
+msgid "Removed response id ${response_id}."
+msgstr "Poistettu vastaus numerolla ${response_id}."
+
+#: ../browser/response.py:541
+msgid "Response id ${response_id} does not exist so it cannot be removed."
+msgstr "Vastausta numerolla ${response_id} ei löydy eikä sitä siis voi poistaa."
+
+#: ../browser/response.py:200
+msgid "Response id ${response_id} does not exist."
+msgstr "Vastausta numerolla ${response_id} ei ole."
+
+#: ../browser/response.py:570
+msgid "Response id ${response_id} has no attachment."
+msgstr "Vastauksella numero ${response_id} ei ole liitettä."
+
+#: ../browser/response.py:533
+msgid "Response id ${response_id} is no integer so it cannot be removed."
+msgstr "Vastausnumero ${response_id} ei ole kokonaisluku, joten vastausta ei voida poistaa."
+
+#: ../browser/response.py:194
+msgid "Response id ${response_id} is no integer."
+msgstr "Vastausnumero ${response_id} ei ole kokonaisluku."
+
+#: ../browser/response.py:400
+msgid "Responsible manager"
+msgstr "Vastaava kehittäjä"
+
+#: ../skins/Poi/poi_tracker_view.pt:31
+#. Default: "Search"
+msgid "Search"
+msgstr "Hae"
+
+#: ../browser/response.py:399
+msgid "Severity"
+msgstr "Vakavuus"
+
+#: ../skins/Poi/poi_issue_view.pt:159
+#. Default: "Stop watching this issue"
+msgid "Stop watching this issue"
+msgstr "Lopeta ongelman seuraaminen"
+
+#: ../skins/Poi/poi_tracker_view.pt:56
+#. Default: "Submit new issue"
+msgid "Submit new issue"
+msgstr "Lähetä uusi raportti"
+
+#: ../browser/response.py:426
+msgid "Target release"
+msgstr "Kohdejulkaisu"
+
+#: ../skins/Poi/poi_issue_view.pt:165
+#. Default: "Watch this issue"
+msgid "Watch this issue"
+msgstr "Seuraa tätä ongelmaa"
+
+#: ../browser/response.py:520
+msgid "You are not allowed to delete responses."
+msgstr "Sinulla ei ole oikeutta poistaa vastauksia."
+
+#: ../browser/response.py:482
+msgid "You are not allowed to edit responses."
+msgstr "Sinulla ei ole oikeutta muokata vastauksia."
+
+#: ../skins/Poi/poi_issue_search.pt:44
+#. Default: "${number} items matching your criteria."
+msgid "batch_x_items_matching_your_criteria"
+msgstr "${number} items matching your criteria."
+
+#: ../skins/Poi/poi_response_delete_confirm.cpt:19
+#. Default: "Are you sure you wish to delete this response?"
+msgid "desc_poi_heading_delete_response"
+msgstr "Haluatko varmasti poistaa tämän vastauksen?"
+
+#: ../skins/Poi/poi_tracker_view.pt:79
+#. Default: "Others cannot submit issues to your tracker until you open it for submissions using the 'state' drop down in the green bar above."
+msgid "description_cannot_add_issues_before_opened"
+msgstr "Muute eivät voi raportoida ongelmia seurantaasi ennen kuin avaat sen käyttäen ylhäällä vihreässä palkissa olevaa 'tila'-valikkoa."
+
+#: ../skins/Poi/poi_issue_search.pt:40
+#. Default: "No results were found."
+msgid "description_no_results_found"
+msgstr "Ei hakutuloksia."
+
+#: ../browser/edit_response.pt:38
+#. Default: "You are not allowed to edit this response."
+msgid "label_edit_response_not_allowed"
+msgstr "Sinulla ei ole oikeutta muokata tätä vastausta."
+
+#: ../browser/edit_response.pt:53
+#. Default: "Please enter your response below"
+msgid "label_enter_response"
+msgstr "Kirjoita vastauksesi tähän"
+
+#: ../skins/Poi/poi_tracker_view.pt:261
+#. Default: "Powered by"
+msgid "label_powered_by"
+msgstr ""
+
+#: ../browser/edit_response.pt:26
+#. Default: "Return to issue."
+msgid "label_return_to_issue"
+msgstr "Palaa ongelmaraporttiin."
+
+#: ../skins/Poi/poi_issue_search_results.pt:6
+#. Default: "RSS Feed"
+msgid "label_rss_feed"
+msgstr "RSS-syöte"
+
+#: ../skins/Poi/poi_issue_search_form.pt:249
+#. Default: "Search"
+msgid "label_search"
+msgstr "Hae"
+
+#: ../skins/Poi/poi_issue_search_results.pt:25
+#. Default: "Area"
+msgid "listingheader_area"
+msgstr "Alue"
+
+#: ../skins/Poi/poi_issue_search_results.pt:21
+#. Default: "#"
+msgid "listingheader_number"
+msgstr "#"
+
+#: ../skins/Poi/poi_issue_search_results.pt:23
+#. Default: "Target"
+msgid "listingheader_release"
+msgstr "Julkaisu"
+
+#: ../skins/Poi/poi_issue_search_results.pt:28
+#. Default: "Responsible"
+msgid "listingheader_responsible"
+msgstr "Vastuuhenkilö"
+
+#: ../skins/Poi/poi_issue_search_results.pt:27
+#. Default: "Severity"
+msgid "listingheader_severity"
+msgstr "Vakavuus"
+
+#: ../skins/Poi/poi_issue_search_results.pt:30
+#. Default: "State"
+msgid "listingheader_state"
+msgstr "Tila"
+
+#: ../skins/Poi/poi_issue_search_results.pt:29
+#. Default: "Tags"
+msgid "listingheader_tags"
+msgstr "Tägit"
+
+#: ../skins/Poi/poi_issue_search_results.pt:22
+#. Default: "Title"
+msgid "listingheader_title"
+msgstr "Otsikko"
+
+#: ../skins/Poi/poi_issue_search_results.pt:26
+#. Default: "Type"
+msgid "listingheader_type"
+msgstr "Tyyppi"
+
+#: ../skins/Poi/poi_tracker_view.pt:42
+#. Default: "If you can, please log in before submitting your issue."
+msgid "login_suggestion"
+msgstr "Kirjaudu sisään ennen ongelman raportoimista, jos mahdollista."
+
+#: ../browser/response.pt:85
+#. Default: "If you can, please log in before submitting a reaction."
+msgid "login_suggestion_response"
+msgstr "Kirjaudu sisään ennen vastauksen lähettämistä, jos mahdollista."
+
+#: ../browser/response.pt:74
+#. Default: "No responses can be added."
+msgid "msg_no_responses_can_be_added"
+msgstr "Vastauksia ei voi lisätä."
+
+#: ../skins/Poi/poi_issue_search_form.pt:84
+#. Default: "(Not assigned)"
+msgid "not_assigned"
+msgstr "(ei vastuuhenkilöä)"
+
+#: ../browser/response.pt:36
+#. Default: "Added by"
+msgid "poi_added_by"
+msgstr "Lisääjä"
+
+#: ../browser/log.pt:77
+#. Default: "Added ${count} day(s) ago."
+msgid "poi_added_days_ago"
+msgstr "Lisätty ${count} päivää sitten."
+
+#: ../browser/log.pt:70
+#. Default: "Added ${count} hour(s) ago."
+msgid "poi_added_hours_ago"
+msgstr "Lisätty ${count} tuntia sitten."
+
+#: ../browser/log.pt:63
+#. Default: "Added ${count} minute(s) ago."
+msgid "poi_added_minutes_ago"
+msgstr "Lisätty ${count} minuuttia sitten."
+
+#: ../browser/response.pt:39
+#. Default: "on"
+msgid "poi_added_on"
+msgstr ", "
+
+#: ../skins/Poi/poi_tracker_view.pt:133
+#. Default: "All pending issues"
+msgid "poi_all_pending_issues"
+msgstr "Kaikki avoimet ongelmat"
+
+#: ../Extensions/poi_issue_workflow_scripts.py:78
+#. Default: "The issue **${issue_title}** in the **${tracker_title}**\ntracker has been marked as resolved by **${response_author}**.\nPlease visit the issue and either confirm that it has been\nsatisfactorily resolved or re-open it.\n\nResponse Information\n--------------------\n\nIssue\n  ${issue_title} (${issue_url})\n\n\n* This is an automated email, please do not reply - ${from_name}"
+msgid "poi_email_issue_resolved_template"
+msgstr ""
+"**${response_author}** on merkinnyt ongelman\n"
+"**${issue_title}**\n"
+"ratkaistuksi seurantajärjestelmässä **${tracker_title}**.\n"
+"Käythän vielä tarkistamassa ongelmaraportin ja joko vahvistamassa\n"
+"ratkaisun tai avaamalla ongelman uudelleen.\n"
+"\n"
+"Vastauksen tiedot\n"
+"-----------------\n"
+"\n"
+"Ongelma\n"
+"  ${issue_title} (${issue_url})\n"
+"\n"
+"\n"
+"* Tämä on automaattinen viesti, ethän vastaa suoraan - ${from_name}"
+
+#: ../content/PoiIssue.py:622
+#. Default: "A new issue has been submitted to the **${tracker_title}**\ntracker by **${issue_author}** and awaits confirmation.\n\nIssue Information\n-----------------\n\nIssue\n  ${issue_title} (${issue_url})\n\n\n**Issue Details**::\n\n${issue_details}\n\n\n* This is an automated email, please do not reply - ${from_name}"
+msgid "poi_email_new_issue_template"
+msgstr ""
+"**${issue_author}** on raportoinut uuden ongelman\n"
+"seurantajärjestelmään **${tracker_title}**.\n"
+"Raportti odottaa vahvistusta.\n"
+"\n"
+"Ongelman tiedot\n"
+"---------------\n"
+"\n"
+"Ongelma\n"
+"  ${issue_title} (${issue_url})\n"
+"\n"
+"\n"
+"**Ongelman yksityiskohdat**::\n"
+"\n"
+"${issue_details}\n"
+"\n"
+"\n"
+"* Tämä on automaattinen viesti, ethän vastaa suoraan - ${from_name}"
+
+#: ../events.py:113
+#. Default: "A new response has been given to the issue **${issue_title}**\nin the tracker **${tracker_title}** by **${response_author}**.\n\nResponse Information\n--------------------\n\nIssue\n  ${issue_title} (${issue_url})\n\n${changes}\n\n${response_details}\n\n* This is an automated email, please do not reply - ${from_name}"
+msgid "poi_email_new_response_template"
+msgstr ""
+"**${response_author}** on kirjoittanut ongelmaan\n"
+"**${issue_title}**\n"
+"uuden vastauksen seurantajärjestelmässä **${tracker_title}**.\n"
+"\n"
+"Vastauksen tiedot\n"
+"-----------------\n"
+"\n"
+"Ongelma\n"
+"  ${issue_title} (${issue_url})\n"
+"\n"
+"${changes}\n"
+"\n"
+"${response_details}\n"
+"\n"
+"* Tämä on automaattinen viesti, ethän vastaa suoraan - ${from_name}"
+
+#: ../skins/Poi/poi_tracker_view.pt:100
+#. Default: "By area"
+msgid "poi_heading_by_area"
+msgstr "Ongelma-alueet"
+
+#: ../skins/Poi/poi_tracker_view.pt:117
+#. Default: "By target release"
+msgid "poi_heading_by_release"
+msgstr "Julkaisut"
+
+#: ../skins/Poi/poi_tracker_view.pt:130
+#. Default: "By state"
+msgid "poi_heading_by_state"
+msgstr "Tilat"
+
+#: ../skins/Poi/poi_tracker_view.pt:154
+#. Default: "By tag"
+msgid "poi_heading_by_tag"
+msgstr "Tägit"
+
+#: ../skins/Poi/poi_response_delete_confirm.cpt:17
+#. Default: "Delete Response"
+msgid "poi_heading_delete_response"
+msgstr "Poista vastaus"
+
+#: ../skins/Poi/poi_issue_search_form.pt:8
+#. Default: "Issue search"
+msgid "poi_heading_issue_search"
+msgstr "Ongelmaraportin haku"
+
+#: ../browser/log.pt:17
+#. Default: "Tracker log"
+msgid "poi_heading_log"
+msgstr "Seurannan loki"
+
+#: ../skins/Poi/poi_tracker_view.pt:208
+#. Default: "My issues"
+msgid "poi_heading_my_issues"
+msgstr "Omat raporttini"
+
+#: ../skins/Poi/poi_tracker_view.pt:89
+#. Default: "Open issues"
+msgid "poi_heading_open_issues"
+msgstr "Avoimet ongelmat"
+
+#: ../skins/Poi/poi_tracker_view.pt:241
+#. Default: "Orphaned issues"
+msgid "poi_heading_orphaned_issues"
+msgstr "Kiinnittämättömät ongelmat"
+
+#: ../events.py:97
+#. Default: "Response Details"
+msgid "poi_heading_response_details"
+msgstr "Vastauksen yksityiskohdat"
+
+#: ../skins/Poi/poi_issue_search.pt:31
+#. Default: "Issue search results"
+msgid "poi_heading_search_results"
+msgstr "Hakutulokset"
+
+#: ../skins/Poi/poi_tracker_view.pt:177
+#. Default: "Unconfirmed issues"
+msgid "poi_heading_unconfirmed_issues"
+msgstr "Vahvistamattomat ongelmat"
+
+#: ../browser/log.pt:19
+#. Default: "An overview of recent activity in the tracker."
+msgid "poi_help_log"
+msgstr "Katsaus viimeaikaisiin muutoksiin seurantajärjestelmässä."
+
+#: ../skins/Poi/poi_tracker_view.pt:209
+#. Default: "The following open issues were either submitted by you, or have been assigned to you. Note that the RSS feed for this list will include unconfirmed and orphaned issues as well, to make it possible to subscribe to a single feed with all the issues you may be interested in."
+msgid "poi_help_my_issues_manager"
+msgstr "Nämä avoimet ongelmat ovat joko sinun raportoimia tai sinulle nimettyjä. Huomaa, että tämän listauksen RSS-syöte sisältää myös vahvistamattomat ja nimeämättömät ongelmat, jotta voit tilata yhden syötteen kaikista kiinnostavista ongelmista."
+
+#: ../skins/Poi/poi_tracker_view.pt:216
+#. Default: "The following open issues were submitted by you."
+msgid "poi_help_my_issues_not_manager"
+msgstr "Nämä avoimet ongelmat ovat sinun raportoimia."
+
+#: ../skins/Poi/poi_tracker_view.pt:93
+#. Default: "Click an area, release or issue state to see all open issues in that category. For more advanced search options, click \"search for issues\"."
+msgid "poi_help_open_issues"
+msgstr "Klikkaa aluetta, julkaisua tai tilaa nähdäksesi kaikki avoimet ongelmaraportit valitussa kategoriassa. Valitse \"Tarkennettu haku\" nähdäksesi edistyneemmät hakuasetukset."
+
+#: ../skins/Poi/poi_tracker_view.pt:242
+#. Default: "The following open issues are not assigned to anyone."
+msgid "poi_help_orphaned_issues_"
+msgstr "Näitä avoimia ongelmia ei ole nimetty kenellekään."
+
+#: ../skins/Poi/poi_tracker_view.pt:178
+#. Default: "The following issues have not yet been confirmed. Please review them and take the appropriate action."
+msgid "poi_help_unconfirmed_issues"
+msgstr "Näitä ongelmia ei ole vielä vahvistettu. Tarkista ongelmaraportit ja toimi tilanteen vaatimalla tavalla."
+
+#: ../skins/Poi/poi_tracker_view.pt:33
+#. Default: "Advanced issue search"
+msgid "poi_issue_search"
+msgstr "Tarkennettu haku"
+
+#: ../skins/Poi/poi_issue_search_form.pt:16
+#. Default: "This form allows you to search for issue according to a variety of criteria. Please make your selection below and click Search."
+msgid "poi_issue_search_description"
+msgstr "Tällä lomakkeella voit hakea ongelmaraportteja monilla eri kriteereillä. Valitse kriteerit alta ja klikkaa hae-nappia."
+
+#: ../skins/Poi/poi_issue_view.pt:49
+#. Default: "Area"
+msgid "poi_label_area"
+msgstr "Alue"
+
+#: ../skins/Poi/poi_issue_view.pt:144
+#. Default: "Attached:"
+msgid "poi_label_attachment"
+msgstr "Liitetiedostot:"
+
+#: ../skins/Poi/poi_issue_view.pt:70
+#. Default: "Responsible"
+msgid "poi_label_responsible"
+msgstr "Vastuuhenkilö"
+
+#: ../skins/Poi/poi_issue_view.pt:57
+#. Default: "Severity"
+msgid "poi_label_severity"
+msgstr "Vakavuus"
+
+#: ../skins/Poi/poi_issue_view.pt:33
+#. Default: "State"
+msgid "poi_label_state"
+msgstr "Tila"
+
+#: ../skins/Poi/poi_issue_view.pt:139
+#. Default: "Steps to reproduce:"
+msgid "poi_label_steps"
+msgstr "Askeleet ongelman todentamiseen:"
+
+#: ../skins/Poi/poi_issue_view.pt:61
+#. Default: "Submitted by"
+msgid "poi_label_submitted_by"
+msgstr "Lähettäjä"
+
+#: ../skins/Poi/poi_issue_view.pt:66
+#. Default: "Submitted on"
+msgid "poi_label_submitted_on"
+msgstr "Lähetyspäivämäärä"
+
+#: ../skins/Poi/poi_issue_view.pt:128
+#. Default: "Tags:"
+msgid "poi_label_tags"
+msgstr "Tägit:"
+
+#: ../skins/Poi/poi_issue_view.pt:82
+#. Default: "Target release:"
+msgid "poi_label_target_release"
+msgstr "Kohdejulkaisu:"
+
+#: ../skins/Poi/poi_issue_view.pt:53
+#. Default: "Issue type"
+msgid "poi_label_type"
+msgstr "Ongelmatyyppi"
+
+#: ../skins/Poi/poi_issue_view.pt:39
+#. Default: "Version:"
+msgid "poi_label_version"
+msgstr "Versio:"
+
+#: ../skins/Poi/poi_issue_view.pt:123
+#. Default: "Last modified on ${modification_time}"
+msgid "poi_last_modified_on"
+msgstr "Muutettu viimeksi ${modification_time}"
+
+#: ../skins/Poi/poi_issue_view.pt:119
+#. Default: "Last modified on ${modification_time} by ${modification_actor}"
+msgid "poi_last_modified_on_by"
+msgstr "Viimeksi muuttanut ${modification_actor}, ${modification_time}"
+
+#: ../skins/Poi/poi_issue_search_form.pt:27
+#. Default: "Search Terms"
+msgid "poi_legend_search_terms"
+msgstr "Hakuehdot"
+
+#: ../skins/Poi/poi_issue_search_form.pt:244
+#. Default: "Match all tags"
+msgid "poi_match_all_tags"
+msgstr "Hae vain raportteja, joilla on kaikki valitut tägit"
+
+#: ../browser/log.pt:33
+#. Default: "New issue ${name} added by ${author}"
+msgid "poi_new_issue_added"
+msgstr "Uusi ongelmaraportti ${name}, lisääjä: ${author}"
+
+#: ../skins/Poi/poi_response_view.pt:19
+#. Default: "Response #${responseNumber} to \"${issueTitle}\""
+msgid "poi_response_title"
+msgstr "Vastaus #${responseNumber} ongelmaan \"${issueTitle}\""
+
+#: ../skins/Poi/poi_issue_view.pt:95
+#. Default: "Return to search results"
+msgid "poi_return_to_search"
+msgstr "Palaa hakutuloksiin"
+
+#: ../skins/Poi/poi_issue_view.pt:102
+#. Default: "Return to tracker"
+msgid "poi_return_to_tracker"
+msgstr "Palaa seurantajärjestelmän etusivulle"
+
+#: ../skins/Poi/poi_issue_search_form.pt:119
+#. Default: "Select the areas you wish to search for."
+msgid "poi_search_help_area"
+msgstr "Valitse alueet, joita haluat hakea."
+
+#: ../skins/Poi/poi_issue_search_form.pt:62
+#. Default: "Enter the username of the issue submitter,"
+msgid "poi_search_help_creator"
+msgstr "Anna raportoijan käyttäjätunnus."
+
+#: ../skins/Poi/poi_issue_search_form.pt:33
+#. Default: "If you wish to search for a particular issue, please enter its number."
+msgid "poi_search_help_id"
+msgstr "Syötä raportin numero, jos haluat hakea tiettyä ongelmaa."
+
+#: ../skins/Poi/poi_issue_search_form.pt:139
+#. Default: "Select the issue types you wish to search for."
+msgid "poi_search_help_issue_type"
+msgstr "Valitse ongelmatyypit, joita haluat hakea."
+
+#: ../skins/Poi/poi_issue_search_form.pt:74
+#. Default: "Select the version for which the bugs you want to find were reported."
+msgid "poi_search_help_release"
+msgstr "Valitse versiot, joihin raportoidut ongelmat liittyvät."
+
+#: ../skins/Poi/poi_issue_search_form.pt:201
+#. Default: "Select the responsible managers you wish to search for."
+msgid "poi_search_help_responsible"
+msgstr "Valitse vastuuhenkilöt, joiden ongelmaraportteja haluat hakea."
+
+#: ../skins/Poi/poi_issue_search_form.pt:159
+#. Default: "Select the severities you wish to search for."
+msgid "poi_search_help_severity"
+msgstr "Valitse vakavuustasot, joita haluat hakea."
+
+#: ../skins/Poi/poi_issue_search_form.pt:179
+#. Default: "Select the states you wish to search for."
+msgid "poi_search_help_state"
+msgstr "Valitse tilat, joita haluat hakea."
+
+#: ../skins/Poi/poi_issue_search_form.pt:223
+#. Default: "Tags are keywords assigned by tracker managers to issues to allow finer-grained organisation of issues. Select the tag or tags you wish to search for."
+msgid "poi_search_help_tags"
+msgstr "Tägit ovat ylläpitäjien ongelmille valitsemia avainsanoja, jotka mahdollistavat ongelmien tarkemman jaottelun. Valitse tägi tai tägit, joita haluat hakea."
+
+#: ../skins/Poi/poi_issue_search_form.pt:97
+#. Default: "Select the assigned target release you wish to search for."
+msgid "poi_search_help_target_release"
+msgstr "Valitse kohdejulkaisu, jonka ongelmia haluat hakea."
+
+#: ../skins/Poi/poi_issue_search_form.pt:48
+#. Default: "Enter any text you wish the issue to include."
+msgid "poi_search_help_text"
+msgstr "Anna teksti, jota haluat raporteista hakea."
+
+#: ../skins/Poi/poi_issue_search_form.pt:117
+#. Default: "Area"
+msgid "poi_search_label_area"
+msgstr "Alue"
+
+#: ../skins/Poi/poi_issue_search_form.pt:60
+#. Default: "Submitter"
+msgid "poi_search_label_creator"
+msgstr "Raportoija"
+
+#: ../skins/Poi/poi_issue_search_form.pt:31
+#. Default: "Issue number"
+msgid "poi_search_label_id"
+msgstr "Raportin tunniste"
+
+#: ../skins/Poi/poi_issue_search_form.pt:137
+#. Default: "Issue type"
+msgid "poi_search_label_issue_type"
+msgstr "Ongelmatyyppi"
+
+#: ../skins/Poi/poi_issue_search_form.pt:72
+#. Default: "Version"
+msgid "poi_search_label_release"
+msgstr "Versio"
+
+#: ../skins/Poi/poi_issue_search_form.pt:199
+#. Default: "Responsible tracker managers"
+msgid "poi_search_label_responsible"
+msgstr "Vastuuhenkilöt"
+
+#: ../skins/Poi/poi_issue_search_form.pt:157
+#. Default: "Severity"
+msgid "poi_search_label_severity"
+msgstr "Vakavuus"
+
+#: ../skins/Poi/poi_issue_search_form.pt:177
+#. Default: "State"
+msgid "poi_search_label_state"
+msgstr "Tila"
+
+#: ../skins/Poi/poi_issue_search_form.pt:221
+#. Default: "Tags"
+msgid "poi_search_label_tags"
+msgstr "Tägit"
+
+#: ../skins/Poi/poi_issue_search_form.pt:95
+#. Default: "Target release"
+msgid "poi_search_label_target_release"
+msgstr "Kohdejulkaisu"
+
+#: ../skins/Poi/poi_issue_search_form.pt:46
+#. Default: "Issue text"
+msgid "poi_search_label_text"
+msgstr "Raportin sisältö"
+
+#: ../skins/Poi/poi_response_view.pt:26
+#. Default: "View issue in full"
+msgid "poi_up_to_issue"
+msgstr "Näytä raportti kokonaisuudessaan"
+
+#: ../browser/response.pt:80
+#. Default: "Add response"
+msgid "title_add_response"
+msgstr "Lisää vastaus"
+
+#: ../browser/edit_response.pt:35
+#. Default: "Edit response"
+msgid "title_edit_response"
+msgstr "Muokkaa vastausta"
+
+#: ../browser/edit_response.pt:24
+#. Default: "Error: no response found for editing"
+msgid "title_error_no_response"
+msgstr "Virhe: muokattavaa vastausta ei löytynyt"
+
+#: ../skins/Poi/poi_issue_search_results.pt:6
+#. Default: "RSS feed of these search results"
+msgid "title_rss_feed"
+msgstr "RSS-syöte näistä hakutuloksista"
+
+#: ../skins/Poi/poi_tracker_view.pt:223
+#. Default: "RSS feed of my issues"
+msgid "title_rss_feed_my_issues"
+msgstr "RSS-syöte omista raporteistani"
+
+#: ../skins/Poi/poi_tracker_view.pt:249
+#. Default: "RSS feed of orphaned issues"
+msgid "title_rss_feed_orphaned"
+msgstr "RSS-syöte nimeämättömistä ongelmista"
+
+#: ../skins/Poi/poi_tracker_view.pt:187
+#. Default: "RSS feed of unconfirmed issues"
+msgid "title_rss_feed_unconfirmed"
+msgstr "RSS-syöte vahvistamattomista ongelmista"
+

@@ -1,0 +1,537 @@
+/*
+ *  This is the file where you put your CSS changes.
+ *  You should preferably use this and override the
+ *  relevant properties you want to change here instead
+ *  of customizing plone.css to survive upgrades. Writing
+ *  your own plone.css only makes sense for very heavy
+ *  customizations. Useful variables from Plone are
+ *  documented at the bottom of this file.
+ */
+
+/* <dtml-with base_properties> (do not remove this :) */
+/* <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either :) */
+
+.hidden { display: none; }
+
+#visual-portal-wrapper { max-width: 1300px; }
+#content { border: 1px solid #74AE0B; padding: 5px !important; line-height: 2em; }
+
+/*
+ * Editor
+ */
+.inline { display: inline; }
+.rightfloat { float: right; }
+.documentFirstHeading { background-color: &dtml-papaVaaleansininen2;; padding-left: 5px; line-height: 1.6em; }
+.discreet { color: #76797C; font-size: 90%; font-weight: normal; }
+.pullquote { border-left: 4px solid #8CACBB; clear: right; color: #c93; float: right; font-weight: bold; margin: 0 0 1em 1em; padding: 0 1em; width: 35%; }
+.callout { color: #c93; font-weight: bold; padding: 0 1em; }
+.visualHighlight { background-color: #ffc; font-weight: normal; font-color: #000; }
+
+ul, ol { margin-left: 15px; }
+
+/*
+ * Search
+ */
+#portal-searchbox .searchSection { visibility: hidden; }
+#portal-searchbox .searchSection input { visibility: hidden; }
+#portal-searchbox #searchGadget { width: 11.5em; }
+
+#portal-searchbox input.searchButton {
+  border-radius: 4px 4px 4px 4px; -moz-border-radius: 4px 4px 4px 4px; -webkit-border-radius: 4px 4px 4px 4px;
+  box-shadow: 0px 0px 4px #999999; -moz-box-shadow: 0px 0px 4px #999999; -webkit-box-shadow: 0px 0px 4px #999999;
+  background: repeat scroll 0 0 &dtml-partioSininen;;
+
+  border: 0;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 4px 5px 5px;
+}
+
+/*
+ * Left column
+ */
+.portlet { border-bottom: none; }
+
+#portal-column-one { padding: 20px 0; }
+#portal-column-one .portletItem { border: solid 3px &dtml-papaVaaleansininen2;; padding: 0; }
+#portal-column-one .portletNavigationTree { background: #ffffff; margin: 0 10px; }
+
+.portletNavigationTree .portletHeader { position: absolute; visibility: hidden; }
+.portletNavigationTree .navTreeItem { border-bottom: solid 3px &dtml-papaVaaleansininen2;; }
+.portletNavigationTree .navTreeItem a {
+  border: 0 !important;
+  border-left: 5px solid !important;
+  font-weight: normal;
+  height: 1.2em;
+  margin: 0;
+  padding-left: 3px;
+  max-width: 16em;
+}
+.portletNavigationTree .navTreeItem a img { float: left; }
+.portletNavigationTree .navTreeItem a span { float: left; max-width: 1em; }
+#portal-column-one .portletNavigationTree .navTreeLevel0 > li:first-child a { color: #ffffff; font-weight: bold; text-align: center; border-left: 0 !important; }
+#portal-column-one .portletNavigationTree .navTreeLevel0 > li:first-child img { position: absolute; visibility: hidden; }
+
+.navTree li { margin: 0; }
+.navTreeLevel0 { margin: 0; }
+.navTreeLevel1 { margin-left: 0.5em; }
+.navTreeLevel2 { margin-left: 1em; }
+.navTreeLevel3 { margin-left: 1.5em; }
+.navTreeLevel4 { margin-left: 2em; }
+.navTreeLevel5 { margin-left: 2.5em; }
+
+/*
+ * Navigation portlet item colors
+ */
+/*
+.state-externally_published img {color: #4f4f4f !important;}
+.state-internally_published img {color: #00aa00 !important;}
+.state-internal img {color: &dtml-partioPunainen; !important;}
+.state-inherit img {color: &dtml-partioSininen; !important;}
+*/
+
+#portal-column-one .state-private,
+#portal-column-one .state-published,
+#portal-column-one .state-missing-value,
+#portal-column-one .state-externally_published,
+#portal-column-one .state-internally_published,
+#portal-column-one .state-internal,
+#portal-column-one .state-inherit {
+  color: #4f4f4f !important;
+}
+/*
+#portal-column-one .state-externally_published img { background-color: #4f4f4f !important; }
+#portal-column-one .state-internally_published img { background-color: #00aa00 !important; }
+#portal-column-one .state-private img { background-color: red; }
+#portal-column-one .state-pending img { background-color: &dtml-partioOranssi; }
+#portal-column-one .state-internal img { background-color: &dtml-partioPunainen; !important; }
+#portal-column-one .state-inherit img { background-color: &dtml-partioSininen; !important; }
+*/
+#portal-column-one .state-externally_published { border-left-color: #4f4f4f !important; }
+#portal-column-one .state-internally_published { border-left-color: #00aa00 !important; }
+#portal-column-one .state-private { border-left-color: red !important; }
+#portal-column-one .state-pending { border-left-color: &dtml-partioOranssi; !important; }
+#portal-column-one .state-internal { border-left-color: &dtml-partioPunainen; !important; }
+#portal-column-one .state-inherit { border-left-color: &dtml-partioHarmaa; !important; }
+
+#portal-column-one .navTreeLevel0 { overflow: hidden; white-space: nowrap; }
+#portal-column-one .navTreeCurrentNode,
+#portal-column-one .navTreeItemInPath { background-color: &dtml-papaVaaleansininen2;; color: #4f4f4f; !important; font-weight: 700 !important; }
+#portal-column-one .navTreeItem a:hover { text-decoration: underline; }
+#portal-column-one ul, #portal-column-one dl { line-height: 1.2em; }
+
+/*
+ * Contact info in left column
+ */
+#portal-column-one .portlet-static-yhteystiedot {
+  background-color: &dtml-papaVaaleansininen;;
+  background-image: url('&dtml-portal_url;/rinkka.png');
+  background-repeat: no-repeat;
+  color: &dtml-partioSininen;;
+  font-size: 0.7em;
+  padding-top: 430px;
+  left: 0;
+  width: 100%;
+}
+
+#portal-column-one .portlet-static-yhteystiedot #osoite { font-size: 0.8em; }
+
+/*
+ * Public and intra frontpage - Three Column Above Layout
+ */
+#portlets-above, #portlets-below { float: left; width: 100%; }
+.portletsAboveContentA { margin-left: 1px; }
+.portletsAboveContentA, .portletsAboveContentB { float: left; width: 33%; }
+.portletsAboveContentC { float: left; width: 220px; }
+.portletsBelowContentA, .portletsBelowContentB, .portletsBelowContentC { float: left; }
+.portletsBelowContentA > *, .portletsBelowContentB > *, .portletsBelowContentC > * { padding-top: 10px; padding-right: 20px; }
+.portletsBelowContentA { width: 40%; }
+.portletsBelowContentB { width: 60%; }
+.documentContent { clear: both; }
+
+.portletsAboveContentA, .portletsAboveContentB { border-right: solid 1px &dtml-partioHarmaa;; }
+.portletsAboveContentA .portletWrapper, .portletsAboveContentB .portletWrapper, .portletsAboveContentC .portletWrapper { padding-right:1em; }
+.managePortletsAboveLink, .managePortletsBelowLink { font-size: 0.7em; }
+
+#portal-column-content { padding-top: 2em; }
+#portal-column-content .portletHeader {
+  background-color: transparent;
+  border: 0;
+  color: &dtml-partioSininen; !important;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0 0 0 0.5em;
+}
+#portal-column-content .portletHeader a { color: &dtml-partioSininen; !important; font-weight: bold; text-transform: uppercase; }
+#portal-column-content .portletItem { border: 0; clear: both; padding: 0.6em 0 0 0.6em; }
+#portal-column-content .newsCollection .portletItemTitle { text-transform: uppercase; font-weight: bold; font-size: 1.1em; margin-bottom: 1em; }
+#portal-column-content .newsCollection .portletItemDetails,
+#portal-column-content .eventCollection .portletItemDetails { display: inline; text-align: left; }
+#portal-column-content .newsCollection .tileImage { clear: both; float: left; margin: 0.4em 0.6em 0.5em 0; }
+#portal-column-content .newsCollection .portletItemDescription { clear: both; }
+#portal-column-content .newsCollection .showDetails { float: right; font-weight: bold; margin-bottom: 0.5em; padding: 0; }
+#portal-column-content .newsCollection .showDetails a,
+#portal-column-content .newsCollection .showDetails a:visited { color: #ffffff; }
+#portal-column-content .newsCollection .portletFooter,
+#portal-column-content .eventCollection .portletFooter,
+#portal-column-content .portletPloneboardRecent .portletFooter { background-color: transparent; border: 0; clear: both; }
+dd.portletFooter { background-color: transparent; border-style: none; }
+
+/*
+ * Green buttons with rounded corners and linear gradient, for the browsers that support it.
+ *
+ * Browser support:
+ * - Full: Firefox 3.5+, Safari 5+, WebKit (ver?), Google Chrome (ver?)
+ * - No linear gradient: Opera 10.60, Firefox 3.0, IE 9
+ * - Rectangle only: IE 8 and below, Firefox before 3.0, ..., ?
+ */
+#portal-globalnav a,
+dd.portletFooter a,
+dd.portletFooter a.tile,
+.showDetails a,
+.boardCommentReplyActions .standalone,
+.formControls .context,
+.contenttype-news-item .tileFooter,
+#login-form input.context {
+  display: inline;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;
+  box-shadow: 1px 1px 3px #999999; -moz-box-shadow: 1px 1px 3px #999999; -webkit-box-shadow: 1px 1px 3px #999999;
+  background: transparent;
+  background-color: #6EDA00; /*fallback if gradients not supported*/
+  /* WebKit and Gecko do the gradient stuff in a slightly different way... */
+  background-image: -moz-linear-gradient(100% 100% 90deg, #39A400, #6EDA00);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#6EDA00), to(#39A400));
+  /*border: 1px solid #D2F2A9;*/
+  color: white;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 3px 6px;
+  white-space: nowrap;
+}
+/* Override some defaults for topnav buttons... */
+#portal-globalnav a { text-decoration: none; background: &dtml-partioSininen;; }
+
+dd.portletFooter a:visited { color: white; /*override default*/ }
+#portal-column-content .newsCollection .portletFooter { margin-top: 3em; }
+#portal-column-content .newsCollection .portletFooter a:visited,
+#portal-column-content .eventCollection .portletFooter a:visited,
+#portal-column-content .portletPloneboardRecent .portletFooter a:visited { color: #ffffff; }
+
+/*
+ * TOC - table of contents
+ */
+#document-toc .portletHeader { background-color: &dtml-partioSininen;; color: #ffffff !important; font-size: 1em; font-weight: bold; line-height: 2em; }
+#document-toc .portletItem { background-color: &dtml-papaVaaleansininen;; border: solid 1px &dtml-partioSininen;; color: &dtml-partioSininen;; padding: 0; }
+#document-toc .portletItem ol { line-height: 1.3em; margin-left: 0.3em; }
+#document-toc .portletItem ol.TOC1Digit { margin-left: 1em; }
+
+/*
+ * Viikon kuva
+ */
+.viikonKuva {
+  background-image: url('&dtml-portal_url;/viikonkuva_kehys.jpg');
+  background-repeat: no-repeat;
+  height: 220px;
+  padding: 20px 0;
+  text-align: center;
+  width: 220px;
+}
+.viikonKuva dd {
+  line-height: 1em;
+  margin: 1em;
+}
+.viikonKuva .kuvateksti {
+  font-size: 0.9em;
+  margin-top: 0.5em;
+}
+
+/*
+ * Banners
+ */
+.portletImageCollection { border: solid 1px &dtml-partioSininen;; }
+.portletImageCollection .portletItem { padding: 10px; text-align: center; }
+
+/*
+ * Document actions
+ */
+.documentActions ul li { display: inline; }
+
+/*
+ * News
+ */
+.contenttype-news-item .tileImage { float: left; margin-bottom: 10px; margin-right: 10px; }
+.contenttype-news-item .tileFooter a { color: #ffffff; text-decoration: none; }
+
+/*
+ * Calendar
+ */
+.template-folder_calendar_view .calendar { display: block; border: 0; width: 60%; }
+.template-folder_calendar_view table.listing {
+  background-color: &dtml-papaVaaleansininen2;;
+  border: 0;
+  border-bottom: solid 1px &dtml-partioSininen;;
+  border-collapse: collapse;
+  width: 100%;
+}
+.template-folder_calendar_view table.listing td { border: 0; padding: 5px; }
+.template-folder_calendar_view table.listing th { background-color: &dtml-partioSininen;; color: #ffffff; padding: 10px; text-transform: uppercase; }
+.template-folder_calendar_view table.listing th.left,
+.template-folder_calendar_view table.listing th.right { padding: 0; vertical-align: top; width: 1px; }
+.template-folder_calendar_view table.listing th.right { text-align: right; }
+.template-folder_calendar_view table.listing td.left { border-left: solid 1px &dtml-partioSininen;; }
+.template-folder_calendar_view table.listing td.content { padding: 0; }
+.template-folder_calendar_view table.listing td.content a { display: block; padding: 5px; }
+.template-folder_calendar_view table.listing tr.contentrow:hover td.content { background-color: &dtml-papaVaaleansininen;; }
+.template-folder_calendar_view table.listing td.datetime { white-space: nowrap; }
+.template-folder_calendar_view table.listing td.right { border-right: solid 1px &dtml-partioSininen;; }
+.template-folder_calendar_view table.listing a { text-decoration: none; }
+.template-folder_calendar_view table.listing .state-private,
+.template-folder_calendar_view table.listing .state-published { color: &dtml-partioSininen; !important; }
+.template-folder_calendar_view .calendar_event_gone { display: none; background-color: #ffffff; }
+
+/*
+ * Events
+ */
+.eventDetails table {
+  background-color: &dtml-papaVaaleansininen;;
+  border: 1px solid &dtml-partioSininen;;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  width: auto;
+}
+
+.eventDetails tr { border: 1px solid &dtml-partioSininen;; }
+.eventDetails th { border: 1px solid &dtml-partioSininen;; color: &dtml-partioSininen;; font-size: 100%; text-align: left; padding: 1.5em; }
+.eventDetails td { border: 1px solid &dtml-partioSininen;; padding: 1em; }
+
+/*
+ * Ploneboard
+ */
+.template-board_view table.listing,
+.template-forum_view table.listing { background-color: #FFF; border: solid 5px &dtml-partioSininen;; border-collapse: collapse; margin-top: 20px; margin-bottom: 30px; width: 100%; }
+
+.listing a { text-decoration: none; display: inline; font-size: 110%; }
+.listingForum { text-decoration: none; }
+.threadRecentCell { font-size: x-small; text-align: center; }
+.forumThreadNameCell { text-align: left; padding: 0 0 0 10px; }
+.forumThreadNameCell .a { display: inline; }
+.threadNameCellAuthor { text-align: left; font-size: x-small; padding: 0 0 0 5px; display: block; }
+
+.listing tr:hover { background-color: #DDD; }
+.listing .centered_discreet { color: #76797C; }
+.listing .discreet,
+.listing .centered_discreet,
+.listing .author,
+.listing .date { font-size: x-small; padding: 0 0 0 5px; display: block; text-align: center; }
+
+.template-board_view thead th,
+.template-forum_view thead th { background-color: &dtml-partioSininen;; color: #ffffff; padding: 0px; text-transform: uppercase; height: 20px; }
+
+.template-board_view thead th:first-child { text-align: left; padding: 0 0 0 10px; }
+
+.template-board_view .forumConversationsCell,
+.template-forum_view .listingCheckbox { text-align: center; border-left: 1px solid #DDD; border-right: 1px solid #DDD; width: 90px; }
+
+.forumMostRecentCell,
+.forumConversationsCell { vertical-align: top; padding-top: 20px; }
+
+.forumTitleCell { vertical-align: top; padding-top: 15px; padding-bottom: 5px; }
+
+a.forumTitle { font-size: 1.3em !important; }
+
+.template-board_view table.listing td,
+.template-forum_view table.listing td { border-bottom: solid 1px &dtml-partioSininen;; }
+.template-forum_view table.listing td { padding:8px 3px; }
+.template-board_view .date,
+.template-forum_view .date { font-weight: normal; }
+
+.boardConversation .boardCommentDetails {
+  border: 0;
+  background-color: transparent;
+  text-transform: uppercase;
+  float: left;
+  width: 25%;
+  margin-top: 5px;
+}
+.template-threaded_conversation_view .boardCommentDetails a { color: &dtml-papaVaaleansininen;; }
+
+.boardCommentDetails .commentPortrait { float: left; margin-right: 5px; }
+.boardConversation .boardComment { background-color: AliceBlue; border: 0; -moz-border-radius: 1em; -webkit-border-radius: 1em; }
+.boardConversation .boardCommentContent { padding-left: 5px; }
+.boardConversation .boardCommentBody {
+  border-left: 5px solid #fff;
+  float: left;
+  margin-left: 5px;
+  margin-top: 5px;
+  padding: 0 0 0 5px;
+  width: 70%;
+  min-height: 75px;
+}
+
+.forumMostRecentCell,
+.threadRecentCell { font-size: x-small; text-align: center !important; width: 250px; }
+
+.boardConversation ol li { list-style-type: decimal; }
+.boardConversation ul li { list-style-type: circle; }
+.boardConversation .boardCommentReplyActions { float: right; }
+
+.forumSearchBox { margin: 3px 0 0; float: right; }
+.forumFirstHeading { margin: 0; float: left; }
+
+.plussign { display: inline !important; font-family: "Courier New", monospace; font-size: 1.3em !important; }
+
+.foldedmessages { padding-left: 20px; padding-top: 5px; }
+
+/*
+ * myGroups portlet
+ */
+#portal-column-two .portlet { border: solid 1px #253764; background-color: #e1f5fd; }
+#portal-column-two .myGroup { padding: 0; }
+#portal-column-two .portletHeader { background-color: #253764; color: #ffffff; font-weight: bold; font-variant: small-caps; }
+#portal-column-two .portletHeader a { color: #ffffff; }
+#portal-column-two .portletItem { border: none; color: #253764; padding: 5px; margin: 5px; background-color: #fff; }
+#portal-column-two li { margin: 0; padding: 0.2em 0; }
+#portal-column-two .even { background-color: #ffffff; }
+#portal-column-two .even:hover,
+#portal-column-two .odd:hover { background-color: #D1E5ED; }
+#portal-column-two .odd { background-color: #e1f5fd; }
+#portal-column-two .portletItem .portletItemDetails { font-size: xx-small; }
+
+/*
+ * Topnav buttons
+ */
+#portal-globalnav li { margin-right: 6px; margin-bottom: 4px; }
+
+#portal-column-one .portletNavigationTree .navTreeLevel0 > li:first-child .navTreeCurrentItem{ background: transparent; }
+#portal-column-one .portletNavigationTree .navTreeLevel0 > li:first-child { background: &dtml-partioSininen;; }
+
+#portaltab-pakki a, .section-pakki #portal-column-one .portletNavigationTree .navTreeLevel0 > li:first-child { background: repeat scroll 0 &dtml-partioPunainen;; }
+#portaltab-ajankohtaista a, .section-ajankohtaista #portal-column-one .portletNavigationTree .navTreeLevel0 > li:first-child { background: repeat scroll 0 &dtml-partioVihrea;;}
+#portaltab-tule-mukaan a, .section-tule-mukaan #portal-column-one .portletNavigationTree .navTreeLevel0 > li:first-child { background: repeat scroll 0 &dtml-partioSininen;;}
+#portaltab-lippukunnille a, .section-lippukunnille #portal-column-one .portletNavigationTree .navTreeLevel0 > li:first-child { background: repeat scroll 0 &dtml-partioOranssi;;}
+#portaltab-palvelut a, .section-palvelut #portal-column-one .portletNavigationTree .navTreeLevel0 > li:first-child { background: repeat scroll 0 &dtml-partioOranssi;;}
+#portaltab-viestinta a, .section-viestinta #portal-column-one .portletNavigationTree .navTreeLevel0 > li:first-child { background: repeat scroll 0 &dtml-partioPunainen;; }
+#portaltab-materiaalipankki a, .section-materiaalipankki #portal-column-one .portletNavigationTree .navTreeLevel0 > li:first-child { background: repeat scroll 0 &dtml-partioVihrea;;}
+#portaltab-materiaalit a, .section-materiaalit #portal-column-one .portletNavigationTree .navTreeLevel0 > li:first-child { background: repeat scroll 0 &dtml-partioVihrea;;}
+#portaltab-keskustelu a, .section-keskustelu #portal-column-one .portletNavigationTree .navTreeLevel0 > li:first-child { background: repeat scroll 0 &dtml-partioSininen;;}
+#portaltab-yhteystiedot a, .section-yhteystiedot #portal-column-one .portletNavigationTree .navTreeLevel0 > li:first-child { background: repeat scroll 0 &dtml-partioOranssi;;}
+
+/* Intranet */
+#portaltab-etusivu a, .section-etusivu #portal-column-one .portletNavigationTree .navTreeLevel0 > li:first-child { background: repeat scroll 0 &dtml-partioPunainen;; }
+#portaltab-alue a, .section-alue #portal-column-one .portletNavigationTree .navTreeLevel0 > li:first-child { background: repeat scroll 0 &dtml-partioVioletti;; }
+#portaltab-koulutus a, .section-koulutus #portal-column-one .portletNavigationTree .navTreeLevel0 > li:first-child { background: repeat scroll 0 &dtml-partioVihrea;; }
+#portaltab-ohjelma a, .section-ohjelma #portal-column-one .portletNavigationTree .navTreeLevel0 > li:first-child { background: repeat scroll 0 &dtml-partioHiekanruskea;; }
+#portaltab-talous a, .section-talous #portal-column-one .portletNavigationTree .navTreeLevel0 > li:first-child { background: repeat scroll 0 &dtml-partioOranssi;; }
+/*-viestinta already defined above*/
+#portaltab-hallinto a, .section-hallinto #portal-column-one .portletNavigationTree .navTreeLevel0 > li:first-child { background: repeat scroll 0 &dtml-partioKarhunruskea;; }
+#portaltab-projektit a, .section-projektit #portal-column-one .portletNavigationTree .navTreeLevel0 > li:first-child { background: repeat scroll 0 &dtml-partioSininen;; }
+#portaltab-ept a, .section-ept #portal-column-one .portletNavigationTree .navTreeLevel0 > li:first-child { background: repeat scroll 0 &dtml-partioHiekanruskea;; }
+#portaltab-kannus a, .section-kannus #portal-column-one .portletNavigationTree .navTreeLevel0 > li:first-child { background: repeat scroll 0 &dtml-partioVihrea;; }
+
+/*
+ * Login form overrides
+ */
+#login-form { width: 40em; margin: 0 auto; }
+#forgotten-password { float: inherit; width: 40%; margin: 0; }
+#login-form #instructions { float: right; width: 50%; margin: 0 1em; }
+
+/*
+ * Member search
+ */
+.template-member_search_results table.listing {
+  background-color: &dtml-papaVaaleansininen;;
+  border: solid 1px &dtml-partioSininen;;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.template-member_search_results thead th { background-color: &dtml-partioSininen;; color: #ffffff; padding: 10px; text-transform: uppercase; }
+.template-member_search_results table td { border: solid 1px &dtml-partioSininen;; }
+
+/*
+ * Front page
+ */
+.contenttype-news-item { margin: 5px; }
+
+/* </dtml-with> */
+
+/* DOCUMENTATION ON PRE-DEFINED PROPERTIES FROM PLONE */
+
+ /* You can insert colors and other variables from Plone's
+    base_properties by doing:
+
+    & dtml-variableName ; (without the spaces, excluded here to not make it render)
+
+    Example:
+
+    myLink {
+        color: & dtml-fontColor ;   (again, without the spaces)
+    }
+
+   This means you can generate your own elements that use Plone's defaults,
+   and respect any customizations people have done. See base_properties for
+   the default values.
+
+   These are the available properties:
+
+   logoName - the file name of the portal logo
+
+   fontFamily - the font family used for all text that is not headers
+
+   fontBaseSize - the base font size that everything is calculated from
+
+   fontColor - the main font color
+
+   fontSmallSize - used for various elements like buttons and discreet text
+
+   discreetColor - the font color of discreet text
+
+   backgroundColor - the background color
+
+   linkColor - the color used on normal links
+
+   linkActiveColor - color used on active links
+
+   linkVisitedColor - color used on visited links
+
+   borderWidth - the width of most borders in Plone
+
+   borderStyle - the style of the border lines, normally solid
+
+   borderStyleAnnotations - style of border lines on comments etc
+
+   globalBorderColor - the border color used on the main tabs, the portlets etc
+
+   globalBackgroundColor - background color for the selected tabs, portlet headings etc
+
+   globalFontColor - the color of the font in the tabs and in portlet headings
+
+   headingFontFamily - font family for h1/h2/h3/h4/h5/h6 headlines
+
+   contentViewBorderColor - the content view tabs border color
+
+   contentViewBackgroundColor - the content view tabs background color
+
+   contentViewFontColor - the font color used in the content view tabs
+
+   inputFontColor - the font color used for input elements
+
+   textTransform - whether to lowercase text in portlets, tabs etc.
+
+   evenRowBackgroundColor - the background color of even rows in listings
+
+   oddRowBackgroundColor - the background color of even rows in listings
+
+   notifyBorderColor - border color of notification elements like the status message, the calendar focus
+
+   notifyBackgroundColor - background color of notification elements like the status message, the calendar focus
+
+   helpBackgroundColor - background color of information pop-ups (currently not used)
+
+ */

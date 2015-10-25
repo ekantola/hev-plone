@@ -1,0 +1,14 @@
+# Configuration file for /etc/cron.monthly/pakki-zope-pack
+
+# Pack the transactions before KEEP_DAYS days. For example, undo is available
+# only for less than KEEP_DAYS days old transactions.
+KEEP_DAYS=40
+
+# Get the credentials
+CREDENTIALS_FILE=/srv/plone/zeocluster/adminPassword.txt
+USERNAME=`grep 'Username: ' $CREDENTIALS_FILE |cut -d ' ' -f 4`
+PASSWORD=`grep 'Password: ' $CREDENTIALS_FILE |cut -d ' ' -f 4`
+
+# Zope host and port
+HOST=localhost
+PORT=8080

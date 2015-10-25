@@ -1,0 +1,7 @@
+# cron.d/plone-remote-backup
+#
+# Backs up the Zope object database to /var/backups/zodb four times per day:
+# at 02:02, 08:02, 14:02 and 20:02. The backup is incremental unless ZODB has
+# been packed after the last backup.
+#
+2 2,8,14,20 * * * plone /usr/bin/plone-remote-backup

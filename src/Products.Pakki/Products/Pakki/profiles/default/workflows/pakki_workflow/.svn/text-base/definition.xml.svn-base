@@ -1,0 +1,291 @@
+<?xml version="1.0"?>
+<dc-workflow xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+             i18n:domain="plone"
+             workflow_id="pakki_workflow"
+             title="Pakki Workflow"
+             description="
+- A placeful intranet workflow with three states: group internal, intranet internal and externally published."
+             state_variable="review_state"
+             initial_state="inherit"
+             i18n:attributes="title; description">
+
+ <!-- These are the permissions being managed -->
+ <permission>Access contents information</permission>
+ <permission>Add portal content</permission>
+ <permission>Change portal events</permission>
+ <permission>List folder contents</permission>
+ <permission>Modify portal content</permission>
+ <permission>View</permission>
+
+ <!-- The various workflow states, with their permission maps -->
+ <state state_id="internal" title="Viewable to the group only" i18n:attributes="title">
+  <description i18n:translate="">
+    Visible to the group members only.
+  </description>
+  <exit-transition transition_id="publish_internally"/>
+  <exit-transition transition_id="publish_externally"/>
+  <exit-transition transition_id="inherit"/>
+  <permission-map name="Access contents information" acquired="False">
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+  </permission-map>
+  <permission-map name="Add portal content" acquired="False">
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+  </permission-map>
+  <permission-map name="Change portal events" acquired="False">
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+  </permission-map>
+  <permission-map name="List folder contents" acquired="False">
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+  </permission-map>
+  <permission-map name="Modify portal content" acquired="False">
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+  </permission-map>
+  <permission-map name="View" acquired="False">
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+  </permission-map>
+ </state>
+ <state state_id="internally_published" title="Internally published" i18n:attributes="title">
+  <description i18n:translate="">
+    Visible to the intranet users, editable by the owner.
+  </description>
+  <exit-transition transition_id="retract_to_internal"/>
+  <exit-transition transition_id="publish_externally"/>
+  <exit-transition transition_id="inherit"/>
+  <permission-map name="Access contents information" acquired="False">
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Member</permission-role>
+   <permission-role>Owner</permission-role>
+  </permission-map>
+  <permission-map name="Add portal content" acquired="False">
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+  </permission-map>
+  <permission-map name="Change portal events" acquired="False">
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+  </permission-map>
+  <permission-map name="List folder contents" acquired="False">
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Member</permission-role>
+   <permission-role>Owner</permission-role>
+  </permission-map>
+  <permission-map name="Modify portal content" acquired="False">
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+  </permission-map>
+  <permission-map name="View" acquired="False">
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Member</permission-role>
+   <permission-role>Owner</permission-role>
+  </permission-map>
+ </state>
+ <state state_id="externally_published" title="Externally published" i18n:attributes="title">
+  <description i18n:translate="">
+    Visible to all, editable by the owner.
+  </description>
+  <exit-transition transition_id="retract_to_internal"/>
+  <exit-transition transition_id="retract_to_internally_published"/>
+  <exit-transition transition_id="inherit"/>
+  <permission-map name="Access contents information" acquired="False">
+   <permission-role>Anonymous</permission-role>
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Member</permission-role>
+   <permission-role>Owner</permission-role>
+  </permission-map>
+  <permission-map name="Add portal content" acquired="False">
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+  </permission-map>
+  <permission-map name="Change portal events" acquired="False">
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+  </permission-map>
+  <permission-map name="List folder contents" acquired="False">
+   <permission-role>Anonymous</permission-role>
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Member</permission-role>
+   <permission-role>Owner</permission-role>
+  </permission-map>
+  <permission-map name="Modify portal content" acquired="False">
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Owner</permission-role>
+  </permission-map>
+  <permission-map name="View" acquired="False">
+   <permission-role>Anonymous</permission-role>
+   <permission-role>Editor</permission-role>
+   <permission-role>Manager</permission-role>
+   <permission-role>Member</permission-role>
+   <permission-role>Owner</permission-role>
+  </permission-map>
+ </state>
+ <state state_id="inherit" title="Inherit permissions" i18n:attributes="title">
+  <description i18n:translate="">
+    Inherit the permission settings from the parent container.
+  </description>
+  <exit-transition transition_id="retract_to_internal"/>
+  <exit-transition transition_id="publish_internally"/>
+  <exit-transition transition_id="publish_externally"/>
+  <permission-map name="Access contents information" acquired="True"/>
+  <permission-map name="Add portal content" acquired="True"/>
+  <permission-map name="Change portal events" acquired="True"/>
+  <permission-map name="List folder contents" acquired="True"/>
+  <permission-map name="Modify portal content" acquired="True"/>
+  <permission-map name="View" acquired="True"/>
+ </state>
+
+ <!-- Transitions between states, including guard conditions -->
+ <transition transition_id="publish_internally" new_state="internally_published"
+             title="Publish internally"
+             trigger="USER"
+             before_script="" after_script=""
+             i18n:attributes="title">
+  <description i18n:translate="">
+    Publishing the item internally makes it visible to all logged-in users.
+  </description>
+  <action url="%(content_url)s/content_status_modify?workflow_action=publish_internally"
+          category="workflow"
+          i18n:translate="">Publish internally</action>
+  <guard>
+   <guard-permission>Modify portal content</guard-permission>
+  </guard>
+ </transition>
+ <transition transition_id="publish_externally" new_state="externally_published"
+             title="Publish externally"
+             trigger="USER"
+             before_script="" after_script=""
+             i18n:attributes="title">
+  <description i18n:translate="">
+    Publishing the item externally makes it visible to everyone.
+  </description>
+  <action url="%(content_url)s/content_status_modify?workflow_action=publish_externally"
+          category="workflow"
+          i18n:translate="">Publish externally</action>
+  <guard>
+   <guard-permission>Modify portal content</guard-permission>
+  </guard>
+ </transition>
+ <transition transition_id="retract_to_internally_published" new_state="internally_published"
+             title="Member retracts submission to internally published"
+             trigger="USER"
+             before_script="" after_script=""
+             i18n:attributes="title">
+  <description i18n:translate="">
+    Hide the item from the public and move it internally pubished.
+  </description>
+  <action url="%(content_url)s/content_status_modify?workflow_action=retract_to_internally_published"
+          category="workflow"
+          i18n:translate="">Retract to internally published</action>
+  <guard>
+   <guard-permission>Modify portal content</guard-permission>
+  </guard>
+ </transition>
+ <transition transition_id="retract_to_internal" new_state="internal"
+             title="Member retracts submission to internal"
+             trigger="USER"
+             before_script="" after_script=""
+             i18n:attributes="title">
+  <description i18n:translate="">
+    Hide the item from everything else except the group.
+  </description>
+  <action url="%(content_url)s/content_status_modify?workflow_action=retract_to_internal"
+          category="workflow"
+          i18n:translate="">Retract to internal</action>
+  <guard>
+   <guard-permission>Modify portal content</guard-permission>
+  </guard>
+ </transition>
+ <transition transition_id="inherit" new_state="inherit"
+             title="Member sets the permissions to inherit"
+             trigger="USER"
+             before_script="" after_script=""
+             i18n:attributes="title">
+  <description i18n:translate="">
+    Inherit the permissions from the parent container.
+  </description>
+  <action url="%(content_url)s/content_status_modify?workflow_action=inherit"
+          category="workflow"
+          i18n:translate="">Inherit permissions</action>
+  <guard>
+   <guard-permission>Modify portal content</guard-permission>
+  </guard>
+ </transition>
+
+ <!-- Workflow variables, managed as part of workflow history -->
+ <variable variable_id="action" for_catalog="False"
+           for_status="True" update_always="True">
+  <description i18n:translate="">Previous transition</description>
+  <default>
+   <expression>transition/getId|nothing</expression>
+  </default>
+  <guard>
+  </guard>
+ </variable>
+ <variable variable_id="actor" for_catalog="False"
+           for_status="True" update_always="True">
+  <description i18n:translate="">
+    The ID of the user who performed the last transition
+  </description>
+  <default>
+   <expression>user/getId</expression>
+  </default>
+  <guard>
+  </guard>
+ </variable>
+ <variable variable_id="comments" for_catalog="False"
+           for_status="True" update_always="True">
+  <description i18n:translate="">
+    Comment about the last transition
+  </description>
+  <default>
+   <expression>python:state_change.kwargs.get('comment', '')</expression>
+  </default>
+  <guard>
+  </guard>
+ </variable>
+ <variable variable_id="review_history" for_catalog="False"
+           for_status="False" update_always="False">
+  <description i18n:translate="">
+    Provides access to workflow history
+  </description>
+  <default>
+   <expression>state_change/getHistory</expression>
+  </default>
+  <guard>
+   <guard-permission>Modify portal content</guard-permission>
+  </guard>
+ </variable>
+ <variable variable_id="time" for_catalog="False"
+           for_status="True" update_always="True">
+  <description i18n:translate="">
+    When the previous transition was performed
+  </description>
+  <default>
+   <expression>state_change/getDateTime</expression>
+  </default>
+  <guard>
+  </guard>
+ </variable>
+</dc-workflow>

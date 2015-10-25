@@ -1,0 +1,75 @@
+Metadata-Version: 1.0
+Name: Products.PakkiLayout
+Version: 1.2.0dev-r654
+Summary: An installable theme for Plone 3.0
+Home-page: http://svn.plone.org/svn/collective/
+Author: Arttu Voutilainen
+Author-email: arttu.voutilainen@gmail.com
+License: GPL
+Description: Introduction
+        ============
+        
+        
+        
+        Changelog
+        =========
+        
+        1.2.0 - Released 2009-10-21
+        ----------------
+        
+        * Force HTTPS in sending login credentials [ekantola]
+        * Removed breadcrumbs and portlet admin links from print media (CSS) [ekantola]
+        * Added WebDAV support (/dav) [ekantola]
+        * Fixed image layout setting so that now it actually does something [ekantola]
+        * Fixed calendar portlet title and dates [pkantola]
+        * Always show the right portlet area [pkantola]
+        * Fixed the Ploneboard newest conversations portlet [pkantola]
+        
+        1.1.6 - Released 2009-08-16
+        ----------------
+        
+        * Improved calendar with better year navigation
+        
+        1.1.5 - Released 2009-06-16
+        ----------------
+        
+        * Removed the customized contact-info.cpt to fix the broken contact
+          info form
+        
+        1.1.4 - Released 2009-05-28
+        ----------------
+        
+        * Reverted search.pt because some recent changes broke it
+        
+        1.1.3 - Released 2009-05-25
+        ----------------
+        
+        * Calendar view now displays all the months of visible years even if
+          the months contain no events - ekantola
+        
+        1.1.2 - Released 2009-05-24
+        ----------------
+        
+        * Much improved folder calendar view
+        
+        1.1.1 - Released 2009-05-21
+        ----------------
+        
+        * Small MyLogin portlet fixes
+        
+        1.1 - Unreleased
+        ----------------
+        
+        * MyLogin portlet
+        
+        0.1 - Unreleased
+        ----------------
+        
+        * Initial release
+        
+        
+Keywords: web zope plone theme
+Platform: UNKNOWN
+Classifier: Framework :: Plone
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
