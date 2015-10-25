@@ -1,4 +1,6 @@
+/.installed.cfg
 /admin.cfg
 /bin
 /eggs
 /develop-eggs
+/parts
