@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<object name="portal_memberdata" meta_type="Plone Memberdata Tool">
-    <property name="nickname" type="string"></property>
-    <property name="local_group" type="string"></property>
-    <property name="roles" type="text"></property>
-    <property name="phone" type="string"></property>
-</object>

@@ -1,7 +1,0 @@
-Include plone/common.conf
-Include plone/awstats.conf
-Include plone/http.conf
-
-<IfModule mod_ssl.c>
-Include plone/https.conf
-</IfModule>
